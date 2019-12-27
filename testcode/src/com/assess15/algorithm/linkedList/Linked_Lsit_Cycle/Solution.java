@@ -1,4 +1,4 @@
-package com.assess15.algorithm.linkedList.linkedLsitCycle;
+package com.assess15.algorithm.linkedList.Linked_Lsit_Cycle;
 
 /**
  * 快慢指针

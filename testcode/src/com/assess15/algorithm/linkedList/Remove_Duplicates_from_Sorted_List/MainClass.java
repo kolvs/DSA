@@ -1,12 +1,19 @@
-package com.assess15.algorithm.linkedList.linkedLsitCycle;
+package com.assess15.algorithm.linkedList.Remove_Duplicates_from_Sorted_List;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * 链表中有环
+ * 83. 删除排序链表中的重复元素
+ * 给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。
+ * 输入: 1->1->2
+ * 输出: 1->2
+ * <p>
+ * [1,1,2]
+ * [1,2]
  */
+
 public class MainClass {
     public static int[] stringToIntegerArray(String input) {
         input = input.trim();
@@ -17,7 +24,7 @@ public class MainClass {
 
         String[] parts = input.split(",");
         int[] output = new int[parts.length];
-        for(int index = 0; index < parts.length; index++) {
+        for (int index = 0; index < parts.length; index++) {
             String part = parts[index].trim();
             output[index] = Integer.parseInt(part);
         }
@@ -31,15 +38,24 @@ public class MainClass {
         // Now convert that list into linked list
         ListNode dummyRoot = new ListNode(0);
         ListNode ptr = dummyRoot;
-        for(int item : nodeValues) {
+        for (int item : nodeValues) {
             ptr.next = new ListNode(item);
             ptr = ptr.next;
         }
         return dummyRoot.next;
     }
 
-    public static String booleanToString(boolean input) {
-        return input ? "True" : "False";
+    public static String listNodeToString(ListNode node) {
+        if (node == null) {
+            return "[]";
+        }
+
+        String result = "";
+        while (node != null) {
+            result += Integer.toString(node.val) + ", ";
+            node = node.next;
+        }
+        return "[" + result.substring(0, result.length() - 2) + "]";
     }
 
     public static void main(String[] args) throws IOException {
@@ -47,13 +63,10 @@ public class MainClass {
         String line;
         while ((line = in.readLine()) != null) {
             ListNode head = stringToListNode(line);
-            line = in.readLine();
-            int pos = Integer.parseInt(line);
 
-//            boolean ret = new Solution().hasCycle(head,pos);
-            boolean ret = new Solution().hasCycle(head);
+            ListNode ret = new Solution().deleteDuplicates(head);
 
-            String out = booleanToString(ret);
+            String out = listNodeToString(ret);
 
             System.out.print(out);
         }

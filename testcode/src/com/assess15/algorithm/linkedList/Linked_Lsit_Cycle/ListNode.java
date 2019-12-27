@@ -1,4 +1,4 @@
-package com.assess15.algorithm.linkedList.reverseLinkedList;
+package com.assess15.algorithm.linkedList.Linked_Lsit_Cycle;
 
 public class ListNode {
     int val;
@@ -6,5 +6,6 @@ public class ListNode {
 
     ListNode(int x) {
         val = x;
+        next = null;
     }
 }
