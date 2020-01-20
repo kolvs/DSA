@@ -1,25 +1,19 @@
-package com.assess15.algorithm.linkedList.Delete_Node_in_a_LinkedL_ist;
+package com.assess15.algorithm.linkedList.Remove_Linked_List_Elements;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * [237. 删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)
+ * [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
  * <p>
- * 请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点，你将只被给定要求被删除的节点。
+ * 删除链表中等于给定值 ***val*** 的所有节点。
  * <p>
- * 现有一个链表 -- head = [4,5,1,9]，它可以表示为:
- * 示例2:
- * 输入: head = [4,5,1,9], node = 1
- * <p>
- * 说明:
- * <p>
- * 链表至少包含两个节点。
- * 链表中所有节点的值都是唯一的。
- * 给定的节点为非末尾节点并且一定是链表中的一个有效节点。
- * 不要从你的函数中返回任何结果。
+ * 示例:
+ * 输入: 1->2->6->3->4->5->6, val = 6
+ * 输出: 1->2->3->4->5
  */
+
 public class MainClass {
     public static int[] stringToIntegerArray(String input) {
         input = input.trim();
@@ -68,13 +62,13 @@ public class MainClass {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         String line;
         while ((line = in.readLine()) != null) {
-            ListNode node = stringToListNode(line);
+            ListNode head = stringToListNode(line);
             line = in.readLine();
-            int n = Integer.parseInt(line);
+            int val = Integer.parseInt(line);
 
-//            new Solution().deleteNode(node, n);
-            new Solution().deleteNode(node);
-            String out = listNodeToString(node);
+            ListNode ret = new Solution2().removeElements(head, val);
+
+            String out = listNodeToString(ret);
 
             System.out.print(out);
         }
