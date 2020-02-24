@@ -1,4 +1,4 @@
-package com.assess15.algorithm.linkedList.Linked_Lsit_Cycle;
+package com.assess15.algorithm.linkedList.Linked_List_Cycle;
 
 public class ListNode {
     int val;
