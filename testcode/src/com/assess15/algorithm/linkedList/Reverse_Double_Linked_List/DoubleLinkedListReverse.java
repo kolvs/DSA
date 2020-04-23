@@ -1,4 +1,4 @@
-package com.assess15.algorithm.linkedList.DoubleLinkedListReverse;
+package com.assess15.algorithm.linkedList.Reverse_Double_Linked_List;
 
 public class DoubleLinkedListReverse {
 
