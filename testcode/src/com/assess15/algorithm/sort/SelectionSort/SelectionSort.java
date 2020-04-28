@@ -14,6 +14,8 @@ public class SelectionSort {
         }
 
         // 总共要经过 N-1 轮比较
+        // [0,array.length)
+        // [0,array.length - 1]
         for (int i = 0; i < array.length - 1; i++) {
             // 最小值
             int min = i;
@@ -36,7 +38,7 @@ public class SelectionSort {
     }
 
     public static void main(String[] args) {
-        int[] array = new int[]{5, 8, 6, 3, 9, 2, 1, 4, 7};
+        int[] array = new int[]{5, 8,3};
         sort(array);
         System.out.println(Arrays.toString(array));
     }

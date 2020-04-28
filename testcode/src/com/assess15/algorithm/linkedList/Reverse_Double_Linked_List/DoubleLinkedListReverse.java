@@ -16,7 +16,7 @@ public class DoubleLinkedListReverse {
 
         System.out.println("反转前");
         print(head);
-        head = reverse(head);
+        head = reverse2(head);
         System.out.println(" ");
         System.out.println("反转后");
         print(head);
@@ -31,6 +31,19 @@ public class DoubleLinkedListReverse {
             head.prev = next;
             prev = head;
             head = next;
+        }
+        return prev;
+    }
+
+    public static DoubleNode reverse2(DoubleNode head) {
+        DoubleNode prev = null;
+        DoubleNode curr = head;
+        while (head != null) {
+            DoubleNode temp = head.next;
+            head.next = prev;
+            head.prev = curr;
+            prev = head;
+            head = temp;
         }
         return prev;
     }
