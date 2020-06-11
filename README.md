@@ -4,7 +4,13 @@
 
 数组、链表、栈、队列
 
-**栈**:LIFO
+**Array**
+
+**Linked List**
+
+**Stack** : LIFO / FILO
+
+- Array or Linked List
 
 ```Java
 Stack<E>
@@ -15,13 +21,25 @@ int getSize()
 boolean isEmpty()    
 ```
 
+**Queue** FIFO
+
+- Array or Double Linked List
+
+
+
+---
+
 
 
 ##### 非线性数据结构 
 
 树、图
 
+
+
 ---
+
+
 
 ### 算法
 
