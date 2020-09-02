@@ -1,4 +1,4 @@
-package com.assess15.leetcode;
+package com.assess15.leetcode.multithreading;
 
 /**
  * 实例化三个线程，一个线程打印a，一个线程打印b，一个线程打印c，三个线程同时执行，要求打印出10个连着的abc。

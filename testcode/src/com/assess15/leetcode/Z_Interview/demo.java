@@ -1,6 +1,7 @@
-package com.assess15.leetcode;
+package com.assess15.leetcode.Z_Interview;
 
 /**
+ * 一道面试题:
  * 数组全数列
  */
 

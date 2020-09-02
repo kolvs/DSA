@@ -1,4 +1,4 @@
-package com.assess15.leetcode;
+package com.assess15.leetcode.multithreading;
 
 /**
  * 用三个线程，顺序打印字母A-Z，输出结果是1A、2B、3C、1D 2E...
