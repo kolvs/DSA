@@ -1,4 +1,4 @@
-package com.laychv.leetcode.math;
+package com.laychv.leetcode.math._136_single_number;
 
 /**
  * 136. 只出现一次的数字

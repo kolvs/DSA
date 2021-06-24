@@ -64,7 +64,7 @@ public class MainClass {
         while ((line = in.readLine()) != null) {
             ListNode head = stringToListNode(line);
 
-            ListNode ret = new Solution2().reverseList(head);
+            ListNode ret = new Solution3().reverseList(head);
 
             String out = listNodeToString(ret);
 

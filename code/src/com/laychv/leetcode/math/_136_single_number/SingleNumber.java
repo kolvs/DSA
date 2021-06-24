@@ -1,4 +1,4 @@
-package com.laychv.leetcode.math;
+package com.laychv.leetcode.math._136_single_number;
 
 import java.io.BufferedReader;
 import java.io.IOException;

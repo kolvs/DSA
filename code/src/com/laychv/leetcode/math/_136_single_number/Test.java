@@ -1,4 +1,4 @@
-package com.laychv.leetcode.math;
+package com.laychv.leetcode.math._136_single_number;
 
 public class Test {
     public static void main(String[] args) {
