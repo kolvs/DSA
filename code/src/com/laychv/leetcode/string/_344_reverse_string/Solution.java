@@ -1,4 +1,4 @@
-package com.laychv.leetcode.string._344_ReverseString;
+package com.laychv.leetcode.string._344_reverse_string;
 
 public class Solution {
     public void reverseString(char[] s) {
