@@ -18,11 +18,11 @@ public class MainClass {
 
         String s = "(()())(())";
         String ret = new Solution().removeOuterParentheses(s);
-        String ret2 = new Solution().removeOuterParentheses2(s);
+//        String ret2 = new Solution().removeOuterParentheses2(s);
 //        String out = (ret);
 
         System.out.println(ret);
-        System.out.println(ret2);
+//        System.out.println(ret2);
 //        }
     }
 }
