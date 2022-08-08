@@ -1,4 +1,4 @@
-package com.laychv.leetcode.hash._242_ValidAnagram;
+package com.laychv.leetcode.string._242_ValidAnagram;
 
 import java.util.HashMap;
 
