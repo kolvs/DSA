@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrintIntegerArray {
+
+    public static String stringToString(String input) {
+        return JsonArray.readFrom("[" + input + "]").get(0).asString();
+    }
+
     public static int[] stringToIntegerArray(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
