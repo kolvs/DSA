@@ -5,7 +5,7 @@ package com.laychv.interview;
  * 数组全数列
  */
 
-public class tencent {
+public class Tencent {
 
     public static void main(String[] args) {
         int[] list = {1, 2, 3, 4};
