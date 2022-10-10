@@ -25,7 +25,7 @@ import static com.laychv.common.PrintTreeNode.stringToTreeNode;
  * (1 --> 3): 和为 4
  * 不存在 sum = 5 的根节点到叶子节点的路径。
  * <p>
- * https://leetcode-cn.com/problems/path-sum
+ * https://leetcode.cn/problems/path-sum
  */
 public class _112_PathSum {
 

@@ -14,7 +14,7 @@ import static com.laychv.common.PrintIntegerArray.stringToIntegerArray;
  * 输出：5, nums = [0,1,4,0,3]
  * 解释：函数应该返回新的长度 5, 并且 nums 中的前五个元素为 0, 1, 3, 0, 4。注意这五个元素可为任意顺序。你不需要考虑数组中超出新长度后面的元素。
  *<p>
- *https://leetcode-cn.com/problems/remove-element
+ *https://leetcode.cn/problems/remove-element
  */
 public class _27_RemoveElement {
 
@@ -39,7 +39,7 @@ public class _27_RemoveElement {
      * 这种思路在移除元素较多时更适合使用，最极端的情况是全部元素都需要移除，遍历一遍结束即可
      * 时间复杂度：O(n)，空间复杂度：O(1)
      * <p>
-     * https://leetcode-cn.com/problems/remove-element/solution/hua-jie-suan-fa-27-yi-chu-yuan-su-by-guanpengchn/
+     * https://leetcode.cn/problems/remove-element/solution/hua-jie-suan-fa-27-yi-chu-yuan-su-by-guanpengchn/
      */
     public static int removeElement(int[] nums, int val) {
         int i = 0;
@@ -62,7 +62,7 @@ public class _27_RemoveElement {
      * <p>
      * 当 nums[j] 与给定的值相等时，递增 j 以跳过该元素。只要 nums[j] != val ，我们就复制 nums[j]  到 nums[i] 并同时递增两个索引。重复这一过程，直到 j 到达数组的末尾，该数组的新长度为 i。
      * <p>
-     * 链接：https://leetcode-cn.com/problems/remove-element/solution/yi-chu-yuan-su-by-leetcode/
+     * 链接：https://leetcode.cn/problems/remove-element/solution/yi-chu-yuan-su-by-leetcode/
      */
     public static int removeElement1(int[] nums, int val) {
         int i = 0;
@@ -84,7 +84,7 @@ public class _27_RemoveElement {
      * 这种思路在移除元素较少时更适合使用，最极端的情况是没有元素需要移除，遍历一遍结束即可
      * 时间复杂度：O(n)，空间复杂度：O(1)
      * <p>
-     * https://leetcode-cn.com/problems/remove-element/solution/hua-jie-suan-fa-27-yi-chu-yuan-su-by-guanpengchn/
+     * https://leetcode.cn/problems/remove-element/solution/hua-jie-suan-fa-27-yi-chu-yuan-su-by-guanpengchn/
      */
     public static int removeElement2(int nums[], int val) {
         int i = nums.length;
@@ -112,7 +112,7 @@ public class _27_RemoveElement {
      * <p>
      * 请注意，被交换的最后一个元素可能是您想要移除的值。但是不要担心，在下一次迭代中，我们仍然会检查这个元素。
      * <p>
-     * https://leetcode-cn.com/problems/remove-element/solution/yi-chu-yuan-su-by-leetcode/
+     * https://leetcode.cn/problems/remove-element/solution/yi-chu-yuan-su-by-leetcode/
      */
     public static int removeElement3(int nums[], int val) {
         int i = 0;

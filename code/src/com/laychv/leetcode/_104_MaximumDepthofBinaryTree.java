@@ -21,7 +21,7 @@ import static com.laychv.common.PrintTreeNode.stringToTreeNode;
  * 15   7
  * 返回它的最大深度3
  * <p>
- * https://leetcode-cn.com/problems/maximum-depth-of-binary-tree
+ * https://leetcode.cn/problems/maximum-depth-of-binary-tree
  */
 class _104_MaximumDepthofBinaryTree {
 

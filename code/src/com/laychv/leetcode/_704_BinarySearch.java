@@ -16,7 +16,7 @@ package com.laychv.leetcode;
  * 你可以假设 nums中的所有元素是不重复的。
  * n将在[1, 10000]之间。nums的每个元素都将在[-9999, 9999]之间。
  * <p>
- * https://leetcode-cn.com/problems/binary-search
+ * https://leetcode.cn/problems/binary-search
  */
 
 public class _704_BinarySearch {

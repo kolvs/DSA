@@ -25,7 +25,7 @@ import static com.laychv.common.PrintIntegerArray.stringToInt2dList;
  * 输入：triangle = [[-10]]
  * 输出：-10
  * <p>
- * https://leetcode-cn.com/problems/triangle
+ * https://leetcode.cn/problems/triangle
  */
 class _120_Triangle {
 
@@ -51,7 +51,7 @@ class _120_Triangle {
     }
 
     /**
-     * @link https://leetcode-cn.com/problems/triangle/solution/di-gui-ji-yi-hua-dp-bi-xu-miao-dong-by-sweetiee/
+     * @link https://leetcode.cn/problems/triangle/solution/di-gui-ji-yi-hua-dp-bi-xu-miao-dong-by-sweetiee/
      * <p>
      * 解法三：动态规划
      * 定义二维 dp 数组,「自底向上的递推」。

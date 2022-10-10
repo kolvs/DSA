@@ -40,15 +40,15 @@
 
 ##### 常见题目：
 
-- [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
+- [1. 两数之和](https://leetcode.cn/problems/two-sum/)
 
-- [15. 三数之和](https://leetcode-cn.com/problems/3sum/)
+- [15. 三数之和](https://leetcode.cn/problems/3sum/)
 
 #### 2、双指针法
 
 ##### 常见题目：
 
-- [26. 删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+- [26. 删除排序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/)
 
-- #### [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
+- #### [27. 移除元素](https://leetcode.cn/problems/remove-element/)
 

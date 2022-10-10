@@ -33,7 +33,7 @@ import java.util.Map;
  * lRUCache.get(3);    // 返回 3
  * lRUCache.get(4);    // 返回 4
  * <p>
- * https://leetcode-cn.com/problems/lru-cache
+ * https://leetcode.cn/problems/lru-cache
  */
 public class _146_LRUCache {
 

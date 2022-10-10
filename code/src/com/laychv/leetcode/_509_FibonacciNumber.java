@@ -22,7 +22,7 @@ package com.laychv.leetcode;
  * <p>
  * 提示：0 ≤ N ≤ 30
  * <p>
- * https://leetcode-cn.com/problems/fibonacci-number
+ * https://leetcode.cn/problems/fibonacci-number
  */
 
 class _509_FibonacciNumber {

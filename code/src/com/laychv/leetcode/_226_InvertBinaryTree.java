@@ -14,7 +14,7 @@ import static com.laychv.common.PrintTreeNode.treeNodeToString;
  * 输入：root = [2,1,3]
  * 输出：[2,3,1]
  * <p>
- * https://leetcode-cn.com/problems/invert-binary-tree
+ * https://leetcode.cn/problems/invert-binary-tree
  */
 class _226_InvertBinaryTree {
 

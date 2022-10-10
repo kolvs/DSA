@@ -109,9 +109,9 @@ next指针不是指向下一个结点，而是指向一个空地址 NULL，表�
 
 ###### 常见题目
 
-- [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+- [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/)
 
-- #### [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
+- #### [876. 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/)
 
 ##### 2、虚拟头结点法/伪结点法
 
@@ -119,7 +119,7 @@ next指针不是指向下一个结点，而是指向一个空地址 NULL，表�
 
 ###### 常见题目
 
-- #### [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+- #### [203. 移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/)
 
 ##### 3、递归
 

@@ -15,7 +15,7 @@ import static com.laychv.common.PrintIntegerArray.stringToIntegerArray;
  * 输入：coins = [1], amount = 0
  * 输出：0
  * <p>
- * https://leetcode-cn.com/problems/coin-change
+ * https://leetcode.cn/problems/coin-change
  */
 
 class _322_CoinChange {

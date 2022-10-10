@@ -18,7 +18,7 @@ package com.laychv.leetcode;
  * 1 <= s.length <= 105
  * s[i] 都是 ASCII 码表中的可打印字符
  * <p>
- * https://leetcode-cn.com/problems/reverse-string
+ * https://leetcode.cn/problems/reverse-string
  */
 public class _344_ReverseString {
 

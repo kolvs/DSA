@@ -25,7 +25,7 @@ import static com.laychv.common.PrintIntegerArray.stringToIntegerArray;
  * 合并结果是 [1] 。
  * 注意，因为 m = 0 ，所以 nums1 中没有元素。nums1 中仅存的 0 仅仅是为了确保合并结果可以顺利存放到 nums1 中。
  * <p>
- * https://leetcode-cn.com/problems/merge-sorted-array
+ * https://leetcode.cn/problems/merge-sorted-array
  */
 class _88_MergeSortedArray {
 

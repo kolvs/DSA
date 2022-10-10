@@ -20,7 +20,7 @@ package com.laychv.leetcode;
  * 2. 1 阶 + 2 阶
  * 3. 2 阶 + 1 阶
  * <p>
- * https://leetcode-cn.com/problems/climbing-stairs/
+ * https://leetcode.cn/problems/climbing-stairs/
  */
 class _70_ClimbingStairs {
 

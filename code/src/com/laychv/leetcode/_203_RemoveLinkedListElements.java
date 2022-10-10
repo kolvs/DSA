@@ -17,7 +17,7 @@ import static com.laychv.common.PrintSingleNode.stringToListNode;
  * 输入：head = [7,7,7,7], val = 7
  * 输出：[]
  * <p>
- * https://leetcode-cn.com/problems/remove-linked-list-elements/
+ * https://leetcode.cn/problems/remove-linked-list-elements/
  */
 class _203_RemoveLinkedListElements {
 

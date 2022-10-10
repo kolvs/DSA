@@ -19,7 +19,7 @@ import static com.laychv.common.PrintSingleNode.booleanToString;
  * 输入：s = "(]"
  * 输出：false
  * <p>
- * https://leetcode-cn.com/problems/valid-parentheses
+ * https://leetcode.cn/problems/valid-parentheses
  */
 
 class _20_ValidParentheses {

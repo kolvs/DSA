@@ -24,7 +24,7 @@ package com.laychv.leetcode;
  * 输入：s = "tourist"
  * 输出：1
  * <p>
- * https://leetcode-cn.com/problems/consecutive-characters
+ * https://leetcode.cn/problems/consecutive-characters
  */
 public class _1446_ConsecutiveCharacters {
 

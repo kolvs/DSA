@@ -18,7 +18,7 @@ import static com.laychv.common.PrintTreeNode.stringToTreeNode;
  * 输入：root = [2,null,3,null,4,null,5,null,6]
  * 输出：5
  * <p>
- * https://leetcode-cn.com/problems/minimum-depth-of-binary-tree
+ * https://leetcode.cn/problems/minimum-depth-of-binary-tree
  */
 public class _111_MinimumDepthofBinaryTree {
 

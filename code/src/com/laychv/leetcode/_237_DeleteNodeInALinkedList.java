@@ -16,7 +16,7 @@ import static com.laychv.common.PrintSingleNode.stringToListNode;
  * 输出：[4,5,9]
  * 解释：指定链表中值为1的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -> 5 -> 9
  * <p>
- * https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
+ * https://leetcode.cn/problems/delete-node-in-a-linked-list/
  */
 class _237_DeleteNodeInALinkedList {
 
