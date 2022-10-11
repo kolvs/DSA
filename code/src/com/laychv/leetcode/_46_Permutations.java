@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.laychv.common.PrintIntegerArray.int2dListToString;
-import static com.laychv.common.PrintIntegerArray.stringToIntegerArray;
 
 /**
- * 46.全排列
+ * 46.全排列 🟡
+ * <p>
+ * 给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。你可以 按任意顺序 返回答案。
  * <p>
  * 输入：nums = [1,2,3]
  * 输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
@@ -23,8 +24,10 @@ import static com.laychv.common.PrintIntegerArray.stringToIntegerArray;
 public class _46_Permutations {
 
     public static void main(String[] args) {
-        String x = "[1,2,3]";
-        System.out.println(int2dListToString(permute(stringToIntegerArray(x))));
+        int[] x = {1, 2, 3};
+        int[] y = {0,1};
+        System.out.println(int2dListToString(permute(x)));
+        System.out.println(int2dListToString(permute(y)));
     }
 
     public static List<List<Integer>> permute(int[] nums) {
