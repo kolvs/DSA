@@ -3,8 +3,8 @@ package com.laychv.leetcode;
 import static com.laychv.common.PrintIntegerArray.integerArrayToString;
 import static com.laychv.common.PrintIntegerArray.stringToIntegerArray;
 
-/***
- * 27. 移除元素
+/**
+ * 27. 移除元素 🟢
  *<p>
  * 输入：nums = [3,2,2,3], val = 3
  * 输出：2, nums = [2,2]
