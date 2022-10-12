@@ -1,6 +1,7 @@
 package com.laychv.leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static com.laychv.common.PrintIntegerArray.int2dListToString;
@@ -16,6 +17,9 @@ import static com.laychv.common.PrintIntegerArray.int2dListToString;
  * 输入：nums = [1,2,3]
  * 输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
  * <p>
+ * 输入：nums = [3,3,0,3]
+ * 输出：[[0,3,3,3],[3,0,3,3],[3,3,0,3],[3,3,3,0]]
+ * <p>
  * https://leetcode.cn/problems/permutations-ii/
  */
 public class _47_Permutations_II {
@@ -25,6 +29,8 @@ public class _47_Permutations_II {
     public static void main(String[] args) {
         int[] x = {1, 1, 2};
         System.out.println(int2dListToString(permuteUnique(x)));
+        int[] y = {3, 3, 0, 3};
+        System.out.println(int2dListToString(permuteUnique(y)));
     }
 
     /**
@@ -34,7 +40,7 @@ public class _47_Permutations_II {
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> item = new ArrayList<>();
         visited = new boolean[nums.length];
-//        Arrays.sort(nums);
+        Arrays.sort(nums);
         backtrace(nums, 0, res, item);
         return res;
     }
