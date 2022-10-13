@@ -19,24 +19,26 @@
 ---
 
 ```Java
-private static void selectionSort(int[] array) {
-    if(array.length <= 1) retrun;
-    // 总共比较次数 n - 1
-    for(int i = 0; i < array.length - 1; i++) {
-        // 保存最小值
-        int min = i;
-        // 每轮比较次数 n - i 
-        for(int j = i + 1;j < array.lenght;j++) {
-            if(array[j] < array[min]){
-                // 记录找到最小值元素的小标
-                min = j;
+class SelectionSort {
+    private static void selectionSort(int[] array) {
+        if (array.length <= 1) retrun;
+        // 总共比较次数 n - 1
+        for (int i = 0; i < array.length - 1; i++) {
+            // 保存最小值
+            int min = i;
+            // 每轮比较次数 n - i 
+            for (int j = i + 1; j < array.lenght; j++) {
+                if (array[j] < array[min]) {
+                    // 记录找到最小值元素的小标
+                    min = j;
+                }
             }
-        }
-        // 找到最小值和i位置所在的值进行交换
-        if(i != min) {
-            int temp = array[i];
-            array[i] = array[mid];
-            array[min] = temp;
+            // 找到最小值和i位置所在的值进行交换
+            if (i != min) {
+                int temp = array[i];
+                array[i] = array[mid];
+                array[min] = temp;
+            }
         }
     }
 }

@@ -24,7 +24,7 @@
 ---
 
 ```Java
-class Insert {
+class InsertionSort {
     private static void sort(int[] array) {
         if (array.length <= 1) return;
         // 从下标1的元素开始选择合适的位置插入,因为下标0的只有一个元素,默认是有序的

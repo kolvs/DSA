@@ -1,6 +1,7 @@
 **类似题目及解法**
 - 最大子数组和：53
 - 最大升序子数组和：1800
+- 27.移除元素/283.移动零
 
 **系列题目**
 - 只出现一次的数字： [136](https://leetcode.cn/problems/single-number/)/[137](https://leetcode.cn/problems/single-number-ii/)/[260](https://leetcode.cn/problems/single-number-iii/)

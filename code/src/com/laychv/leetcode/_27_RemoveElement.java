@@ -1,34 +1,33 @@
 package com.laychv.leetcode;
 
 import static com.laychv.common.PrintIntegerArray.integerArrayToString;
-import static com.laychv.common.PrintIntegerArray.stringToIntegerArray;
 
 /**
  * 27. 移除元素 🟢
- *<p>
+ * <p>
  * 输入：nums = [3,2,2,3], val = 3
  * 输出：2, nums = [2,2]
  * 解释：函数应该返回新的长度 2, 并且 nums 中的前两个元素均为 2。你不需要考虑数组中超出新长度后面的元素。例如，函数返回的新长度为 2 ，而 nums = [2,2,3,3] 或 nums = [2,2,0,0]，也会被视作正确答案。
- *<p>
- *输入：nums = [0,1,2,2,3,0,4,2], val = 2
+ * <p>
+ * 输入：nums = [0,1,2,2,3,0,4,2], val = 2
  * 输出：5, nums = [0,1,4,0,3]
  * 解释：函数应该返回新的长度 5, 并且 nums 中的前五个元素为 0, 1, 3, 0, 4。注意这五个元素可为任意顺序。你不需要考虑数组中超出新长度后面的元素。
- *<p>
- *https://leetcode.cn/problems/remove-element
+ * <p>
+ * https://leetcode.cn/problems/remove-element
  */
 public class _27_RemoveElement {
 
     public static void main(String[] args) {
-        String x = "[3,2,2,3]";
-        int val = 3;
-        System.out.println(integerArrayToString(stringToIntegerArray(x), removeElement(stringToIntegerArray(x), val)));
-        System.out.println(integerArrayToString(stringToIntegerArray(x), removeElement1(stringToIntegerArray(x), val)));
-        System.out.println(integerArrayToString(stringToIntegerArray(x), removeElement2(stringToIntegerArray(x), val)));
-        System.out.println(integerArrayToString(stringToIntegerArray(x), removeElement3(stringToIntegerArray(x), val)));
+
+        int[] a = {3, 2, 2, 3};
+        int av = 3;
+//        System.out.println(integerArrayToString(a, removeElement(a, av)));
+        System.out.println(removeElement(a,av));
 
         int[] y = {0, 1, 2, 2, 3, 0, 4, 2};
-        int va = 2;
-        System.out.println(removeElement3(y, va));
+        int yv = 2;
+        System.out.println(integerArrayToString(y, removeElement3(y, yv)));
+//        System.out.println(removeElement3(y, yv));
     }
 
     /**
@@ -86,7 +85,7 @@ public class _27_RemoveElement {
      * <p>
      * https://leetcode.cn/problems/remove-element/solution/hua-jie-suan-fa-27-yi-chu-yuan-su-by-guanpengchn/
      */
-    public static int removeElement2(int nums[], int val) {
+    public static int removeElement2(int[] nums, int val) {
         int i = nums.length;
         for (int j = 0; j < i; ) {
             if (nums[j] == val) {
@@ -114,7 +113,7 @@ public class _27_RemoveElement {
      * <p>
      * https://leetcode.cn/problems/remove-element/solution/yi-chu-yuan-su-by-leetcode/
      */
-    public static int removeElement3(int nums[], int val) {
+    public static int removeElement3(int[] nums, int val) {
         int i = 0;
         int j = nums.length;
         while (i < j) {
