@@ -6,7 +6,7 @@ import static com.laychv.common.PrintTreeNode.stringToTreeNode;
 import static com.laychv.common.PrintTreeNode.treeNodeToString;
 
 /**
- * 226. 翻转二叉树
+ * 226. 翻转二叉树 🟢
  * <p>
  * 输入：root = [4,2,7,1,3,6,9]
  * 输出：[4,7,2,9,6,3,1]

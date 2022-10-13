@@ -6,7 +6,7 @@ import static com.laychv.common.PrintSingleNode.listNodeToString;
 import static com.laychv.common.PrintSingleNode.stringToListNode;
 
 /**
- * 206. 反转链表
+ * 206. 反转链表 🟢
  * 反转一个单链表。
  * <p>
  * 输入：head = [1,2,3,4,5]

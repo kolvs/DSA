@@ -1,7 +1,7 @@
 package com.laychv.leetcode;
 
 /**
- * 509. 斐波那契数
+ * 509. 斐波那契数 🟢
  * 斐波那契数，通常用F(n) 表示，形成的序列称为斐波那契数列。该数列由0 和 1 开始，后面的每一项数字都是前面两项数字的和。也就是：
  * <p>
  * F(0) = 0, F(1)= 1
@@ -38,11 +38,9 @@ class _509_FibonacciNumber {
      * 时间复杂度: o(2^n)
      * 空间复杂度: O(1)
      */
-    public static int fib(int N) {
-        if (N <= 1) {
-            return N;
-        }
-        return fib(N - 1) + fib(N - 2);
+    public static int fib(int n) {
+        if (n <= 1) return n;
+        return fib(n - 1) + fib(n - 2);
     }
 
     /**
@@ -51,19 +49,17 @@ class _509_FibonacciNumber {
      * 时间复杂度: O(n)
      * 空间复杂度: O(n)
      */
-    public static int fib2(int N) {
+    public static int fib2(int n) {
         // 终止条件
-        if (N <= 1) {
-            return N;
-        }
+        if (n <= 1) return n;
         // 定义状态
-        int[] dp = new int[N + 1];
+        int[] dp = new int[n + 1];
         dp[1] = dp[2] = 1;
         // 状态转移方程
-        for (int i = 3; i <= N; i++) {
+        for (int i = 3; i <= n; i++) {
             dp[i] = dp[i - 1] + dp[i - 2];
         }
-        return dp[N];
+        return dp[n];
     }
 
 }

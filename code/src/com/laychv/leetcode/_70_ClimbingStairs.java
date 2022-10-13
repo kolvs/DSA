@@ -1,7 +1,7 @@
 package com.laychv.leetcode;
 
 /**
- * [70. 爬楼梯]
+ * 70. 爬楼梯 🟢
  * <p>
  * 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
  * 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
@@ -113,5 +113,15 @@ class _70_ClimbingStairs {
         double sqrt5 = Math.sqrt(5);
         double fib = Math.pow((1 + sqrt5) / 2, n + 1) - Math.pow((1 - sqrt5) / 2, n + 1);
         return (int) (fib / sqrt5);
+    }
+
+    public int climbStairs6(int n) {
+        int p = 0, q = 0, r = 1;
+        for (int i = 0; i < n; i++) {
+            p = q;
+            q = r;
+            r = p + q;
+        }
+        return r;
     }
 }

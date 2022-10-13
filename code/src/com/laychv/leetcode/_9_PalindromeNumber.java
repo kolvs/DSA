@@ -3,7 +3,7 @@ package com.laychv.leetcode;
 import static com.laychv.common.PrintSingleNode.booleanToString;
 
 /**
- * 9. 回文数
+ * 9. 回文数 🟢
  * <p>
  * 输入：x = 121
  * 输出：true

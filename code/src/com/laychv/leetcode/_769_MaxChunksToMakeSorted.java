@@ -22,8 +22,8 @@ public class _769_MaxChunksToMakeSorted {
     public static void main(String[] args) {
         int[] x = {4, 3, 2, 1, 0};
         System.out.println(maxChunksToSorted(x));
-        int[] y = {1,0,2,3,4};
-        System.out.println(maxChunksToSorted(y));
+        int[] y = {1, 0, 2, 3, 4};
+        System.out.println(maxChunksToSorted2(y));
     }
 
     // 贪心
@@ -32,6 +32,15 @@ public class _769_MaxChunksToMakeSorted {
         int j = 0;
         for (int i = 0; i < arr.length; i++) {
             j = Math.max(j, arr[i]);
+            if (j == i) res++;
+        }
+        return res;
+    }
+
+    public static int maxChunksToSorted2(int[] a) {
+        int res = 0;
+        for (int i = 0, j = 0; i < a.length; i++) {
+            j = Math.max(j, a[i]);
             if (j == i) res++;
         }
         return res;

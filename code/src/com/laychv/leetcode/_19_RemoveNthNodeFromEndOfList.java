@@ -6,7 +6,8 @@ import static com.laychv.common.PrintSingleNode.listNodeToString;
 import static com.laychv.common.PrintSingleNode.stringToListNode;
 
 /**
- * 19. 删除链表的倒数第N个节点
+ * 19. 删除链表的倒数第N个节点 🟡
+ * <p>
  * 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
  * <p>
  * 输入：head = [1,2,3,4,5], n = 2

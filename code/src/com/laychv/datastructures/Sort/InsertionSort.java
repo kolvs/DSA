@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Insertion sort
- * O(n^2)
+ * O(n²)
  * 插入排序是稳定的排序算法
  * <p>
  * 交换法

@@ -5,7 +5,7 @@ import java.util.List;
 import static com.laychv.common.PrintIntegerArray.stringToInt2dList;
 
 /**
- * 120. 三角形最小路径和
+ * 120. 三角形最小路径和 🟡
  * <p>
  * 给定一个三角形 triangle ，找出自顶向下的最小路径和。
  * <p>

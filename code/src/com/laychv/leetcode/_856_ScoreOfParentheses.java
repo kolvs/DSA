@@ -102,8 +102,8 @@ public class _856_ScoreOfParentheses {
 
     /**
      * 分治
-     * TC:O(n^2)
-     * SC:O(n^2)
+     * TC:O(n²)
+     * SC:O(n²)
      */
     public static int scoreOfParentheses4(String s) {
         if (s.length() == 2) return 1;

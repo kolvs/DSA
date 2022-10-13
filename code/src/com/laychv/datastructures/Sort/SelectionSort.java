@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Selection sort
- * O(n^2)
+ * O(n²)
  * 选择排序法是不稳定的
  */
 

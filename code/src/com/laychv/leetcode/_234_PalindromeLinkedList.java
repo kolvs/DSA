@@ -8,7 +8,7 @@ import static com.laychv.common.PrintSingleNode.booleanToString;
 import static com.laychv.common.PrintSingleNode.stringToListNode;
 
 /**
- * 234.回文链表
+ * 234.回文链表 🟢
  * <p>
  * 输入：head = [1,2,2,1]
  * 输出：true

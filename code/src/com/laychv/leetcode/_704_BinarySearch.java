@@ -1,7 +1,8 @@
 package com.laychv.leetcode;
 
 /**
- * 704. 二分查找
+ * 704. 二分查找 🟢
+ * <p>
  * 给定一个n个元素有序的（升序）整型数组nums 和一个目标值target，写一个函数搜索nums中的 target，如果目标值存在返回下标，否则返回 -1。
  * <p>
  * 输入: nums = [-1,0,3,5,9,12], target = 9
@@ -18,7 +19,6 @@ package com.laychv.leetcode;
  * <p>
  * https://leetcode.cn/problems/binary-search
  */
-
 public class _704_BinarySearch {
 
     public static void main(String[] args) {

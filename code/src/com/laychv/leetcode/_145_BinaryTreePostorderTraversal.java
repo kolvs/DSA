@@ -11,9 +11,19 @@ import static com.laychv.common.PrintTreeNode.integerArrayListToString;
 import static com.laychv.common.PrintTreeNode.stringToTreeNode;
 
 /**
- * 145. 二叉树的后序遍历
+ * 145. 二叉树的后序遍历 🟢
+ * <p>
  * 输入：root = [1,null,2,3]
  * 输出：[3,2,1]
+ * <p>
+ * 输入：root = []
+ * 输出：[]
+ * <p>
+ * 输入：root = [1]
+ * 输出：[1]
+ *
+ * <p>
+ * https://leetcode.cn/problems/binary-tree-postorder-traversal/
  */
 public class _145_BinaryTreePostorderTraversal {
 

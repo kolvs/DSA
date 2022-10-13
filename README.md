@@ -17,7 +17,7 @@ BinaryTree BinarySearchTree Graph
 
 #### [Sort](doc/Sort/TenSorts.md)
 
-Time Complexity: n^ 2
+Time Complexity: n²
 
 - [Bubble Sort](doc/Sort/1BubbleSort.md)
 - [Insertion Sort](doc/Sort/1InsertionSort.md)

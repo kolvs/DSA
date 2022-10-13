@@ -6,7 +6,7 @@ import static com.laychv.common.PrintIntegerArray.integerArrayToString;
 import static com.laychv.common.PrintIntegerArray.stringToIntegerArray;
 
 /**
- * 1. 两数之和
+ * 1. 两数之和 🟢
  * <p>
  * 输入：nums = [2,7,11,15], target = 9
  * 输出：[0,1]

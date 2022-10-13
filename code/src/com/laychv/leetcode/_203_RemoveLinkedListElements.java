@@ -6,7 +6,7 @@ import static com.laychv.common.PrintSingleNode.listNodeToString;
 import static com.laychv.common.PrintSingleNode.stringToListNode;
 
 /**
- * 203. 移除链表元素
+ * 203. 移除链表元素 🟢
  * <p>
  * 输入：head = [1,2,6,3,4,5,6], val = 6
  * 输出：[1,2,3,4,5]

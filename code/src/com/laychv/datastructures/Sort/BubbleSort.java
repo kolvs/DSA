@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Bubble sort
- * O(n^2)
+ * O(n²)
  * 稳定的
  */
 public class BubbleSort {

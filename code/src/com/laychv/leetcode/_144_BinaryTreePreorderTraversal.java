@@ -10,10 +10,16 @@ import static com.laychv.common.PrintTreeNode.integerArrayListToString;
 import static com.laychv.common.PrintTreeNode.stringToTreeNode;
 
 /**
- * 144. 二叉树的前序遍历
+ * 144. 二叉树的前序遍历 🟢
  * <p>
  * 输入：root = [1,null,2,3]
  * 输出：[1,2,3]
+ * <p>
+ * 输入：root = []
+ * 输出：[]
+ * <p>
+ * 输入：root = [1]
+ * 输出：[1]
  * <p>
  * https://leetcode.cn/problems/binary-tree-preorder-traversal/?plan=data-structures&plan_progress=svs5wbc
  */

@@ -6,7 +6,7 @@ import java.util.List;
 import static com.laychv.common.PrintIntegerArray.stringListToString;
 
 /**
- * 1408. 数组中的字符串匹配
+ * 1408. 数组中的字符串匹配 🟢
  * <p>
  * 输入：words = ["mass","as","hero","superhero"]
  * 输出：["as","hero"]
