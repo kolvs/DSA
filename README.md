@@ -29,3 +29,6 @@ Time Complexity: nlogn
 - [Quick Sort](doc/Sort/2QuickSort.md)
 
 Time Complexity: n
+- Counting Sort
+- Radix Sort
+- Bucket Sort
