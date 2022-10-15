@@ -1,7 +1,5 @@
 package com.laychv.leetcode;
 
-import static com.laychv.common.PrintSingleNode.booleanToString;
-
 /**
  * 9. 回文数 🟢
  * <p>
@@ -22,7 +20,7 @@ public class _9_PalindromeNumber {
 
     public static void main(String[] args) {
         int x = 121;
-        System.out.println(booleanToString(isPalindrome(x)));
+        System.out.println(isPalindrome(x));
     }
 
     public static boolean isPalindrome(int x) {

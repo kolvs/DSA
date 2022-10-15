@@ -4,8 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-import static com.laychv.common.PrintSingleNode.booleanToString;
-
 /**
  * 20. 有效的括号 🟢
  * <p>
@@ -27,7 +25,7 @@ class _20_ValidParentheses {
 
     public static void main(String[] args) {
         String s = "()[()]";
-        System.out.print(booleanToString(isValid(s)));
+        System.out.print(isValid(s));
     }
 
     public static boolean isValid(String s) {

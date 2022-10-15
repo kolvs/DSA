@@ -1,26 +1,26 @@
 package com.laychv.datastructures.LinkedList;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
 /**
  * 单链表插入
  */
 public class InsertElement {
 
-    SingleNode head;
+    ListNode head;
 
     /**
      * linked List
      * insert
      **/
     public static void insert(InsertElement list, int data) {
-        SingleNode new_node = new SingleNode(data);
+        ListNode new_node = new ListNode(data);
         new_node.next = null;
 
         if (list.head == null) {
             list.head = new_node;
         } else {
-            SingleNode last = list.head;
+            ListNode last = list.head;
             while (last.next != null) {
                 last = last.next;
             }
@@ -36,7 +36,7 @@ public class InsertElement {
      * @param list
      */
     public static void printList(InsertElement list) {
-        SingleNode curr = list.head;
+        ListNode curr = list.head;
         while (curr != null) {
             System.out.println(curr.val + " - insert");
             curr = curr.next;

@@ -1,10 +1,10 @@
 package com.laychv.datastructures.LinkedList;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
 public class DeleteByKey {
 
-    SingleNode head;
+    ListNode head;
 
     /**
      * insert
@@ -13,13 +13,13 @@ public class DeleteByKey {
      * @param data
      */
     public static void insert(DeleteByKey list, int data) {
-        SingleNode new_node = new SingleNode(data);
+        ListNode new_node = new ListNode(data);
         new_node.next = null;
 
         if (list.head == null) {
             list.head = new_node;
         } else {
-            SingleNode last = list.head;
+            ListNode last = list.head;
             while (last.next != null) {
                 last = last.next;
             }
@@ -34,7 +34,7 @@ public class DeleteByKey {
      * @param list
      */
     public static void printList(DeleteByKey list) {
-        SingleNode node = list.head;
+        ListNode node = list.head;
         while (node != null) {
             System.out.println(node.val + "...");
             node = node.next;
@@ -48,8 +48,8 @@ public class DeleteByKey {
      * @param key
      */
     public static void deleteByKey(DeleteByKey list, int key) {
-        SingleNode curr = list.head;
-        SingleNode prev = null;
+        ListNode curr = list.head;
+        ListNode prev = null;
         if (curr != null && curr.val == key) {
             System.out.println(key + "delete");
             list.head = curr.next;

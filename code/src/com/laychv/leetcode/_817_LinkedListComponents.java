@@ -1,11 +1,11 @@
 package com.laychv.leetcode;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import static com.laychv.common.PrintSingleNode.stringToListNode;
+import static com.laychv.common.PrintListNode.stringToListNode;
 
 /**
  * 817. 链表组件 🟡
@@ -40,7 +40,7 @@ public class _817_LinkedListComponents {
     /**
      * iterator + set
      */
-    public static int numComponents(SingleNode head, int[] nums) {
+    public static int numComponents(ListNode head, int[] nums) {
         Set<Integer> set = new HashSet<>();
         int res = 0;
         boolean inSet = false;
@@ -66,7 +66,7 @@ public class _817_LinkedListComponents {
     /**
      * iterator + set
      */
-    public static int numComponents2(SingleNode head, int[] nums) {
+    public static int numComponents2(ListNode head, int[] nums) {
         int res = 0;
         Set<Integer> set = new HashSet<>();
         for (int n : nums) set.add(n);

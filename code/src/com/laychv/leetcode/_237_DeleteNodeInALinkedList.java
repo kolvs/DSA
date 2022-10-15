@@ -1,9 +1,9 @@
 package com.laychv.leetcode;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
-import static com.laychv.common.PrintSingleNode.listNodeToString;
-import static com.laychv.common.PrintSingleNode.stringToListNode;
+import static com.laychv.common.PrintListNode.listNodeToString;
+import static com.laychv.common.PrintListNode.stringToListNode;
 
 /**
  * 237. 删除链表中的节点 🟡
@@ -23,12 +23,12 @@ class _237_DeleteNodeInALinkedList {
     public static void main(String[] args) {
         String x = "[4,5,1,9]";
         int node = 5;
-        SingleNode head = stringToListNode(x);
+        ListNode head = stringToListNode(x);
         deleteNode(head, node);
         System.out.print(listNodeToString(head));
     }
 
-    public static void deleteNode(SingleNode node, int n) {
+    public static void deleteNode(ListNode node, int n) {
         node.val = node.next.val;
         node.next = node.next.next;
     }

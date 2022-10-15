@@ -1,9 +1,9 @@
 package com.laychv.leetcode;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
-import static com.laychv.common.PrintSingleNode.listNodeToString;
-import static com.laychv.common.PrintSingleNode.stringToListNode;
+import static com.laychv.common.PrintListNode.listNodeToString;
+import static com.laychv.common.PrintListNode.stringToListNode;
 
 /**
  * 203. 移除链表元素 🟢
@@ -29,12 +29,12 @@ class _203_RemoveLinkedListElements {
     }
 
     //  通过虚拟头结点方式删除
-    public static SingleNode removeElements(SingleNode head, int val) {
+    public static ListNode removeElements(ListNode head, int val) {
         // 虚拟头结点,存放的是head
-        SingleNode dummyHead = new SingleNode(0);
+        ListNode dummyHead = new ListNode(0);
         dummyHead.next = head;
 
-        SingleNode prev = dummyHead;
+        ListNode prev = dummyHead;
         while (prev.next != null) {
             if (prev.next.val == val) {
                 // 删除元素,指针指向下下个元素
@@ -47,12 +47,12 @@ class _203_RemoveLinkedListElements {
         return dummyHead.next;
     }
 
-    public static SingleNode removeElements2(SingleNode head, int val) {
-        SingleNode dummyHead = new SingleNode(0);
+    public static ListNode removeElements2(ListNode head, int val) {
+        ListNode dummyHead = new ListNode(0);
         dummyHead.next = head;
 
-        SingleNode curr = head;
-        SingleNode prev = dummyHead;
+        ListNode curr = head;
+        ListNode prev = dummyHead;
         while (curr != null) {
             if (curr.val == val) {
                 prev.next = curr.next;

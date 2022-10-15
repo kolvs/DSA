@@ -26,21 +26,21 @@ public class PrintLinkedList {
         return output;
     }
 
-    public SingleNode stringToListNode(String input) {
+    public ListNode stringToListNode(String input) {
         // Generate array from the input
         int[] nodeValues = stringToIntegerArray(input);
 
         // Now convert that list into linked list
-        SingleNode dummyRoot = new SingleNode(0);
-        SingleNode ptr = dummyRoot;
+        ListNode dummyRoot = new ListNode(0);
+        ListNode ptr = dummyRoot;
         for (int item : nodeValues) {
-            ptr.next = new SingleNode(item);
+            ptr.next = new ListNode(item);
             ptr = ptr.next;
         }
         return dummyRoot.next;
     }
 
-    public String listNodeToString(SingleNode node) {
+    public String listNodeToString(ListNode node) {
         if (node == null) {
             return "[]";
         }

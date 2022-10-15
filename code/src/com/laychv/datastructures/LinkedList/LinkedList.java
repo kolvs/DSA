@@ -1,6 +1,6 @@
 package com.laychv.datastructures.LinkedList;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 import com.laychv.common.PrintLinkedList;
 
 /**
@@ -10,15 +10,15 @@ import com.laychv.common.PrintLinkedList;
  */
 public class LinkedList {
 
-    private static SingleNode loop(SingleNode head) {
+    private static ListNode loop(ListNode head) {
         // 递归 取值 head.value
         if (head.next == null) return head;
-        SingleNode rs = loop(head.next);
+        ListNode rs = loop(head.next);
         return rs;
     }
 
-    private static SingleNode loop2(SingleNode head) {
-        for (SingleNode p = head; p != null; p = p.next) {
+    private static ListNode loop2(ListNode head) {
+        for (ListNode p = head; p != null; p = p.next) {
             // 迭代 取值 p.value
             System.out.println(p.val);
         }
@@ -31,9 +31,9 @@ public class LinkedList {
      * @param head
      * @return
      */
-    private static SingleNode reverse(SingleNode head) {
+    private static ListNode reverse(ListNode head) {
         if (head.next == null) return head;
-        SingleNode last = reverse(head.next);
+        ListNode last = reverse(head.next);
         head.next.next = head;
         head.next = null;
         return last;
@@ -51,7 +51,7 @@ public class LinkedList {
      * @param n    end
      * @return
      */
-    private static SingleNode reverseRange(SingleNode head, int m, int n) {
+    private static ListNode reverseRange(ListNode head, int m, int n) {
         if (m == 1) {
             return reverseN(head, n);
         }
@@ -66,13 +66,13 @@ public class LinkedList {
      * @param n
      * @return
      */
-    private static SingleNode reverseN(SingleNode head, int n) {
-        SingleNode cur = null;
+    private static ListNode reverseN(ListNode head, int n) {
+        ListNode cur = null;
         if (n == 1) {
             cur = head.next;
             return head;
         }
-        SingleNode last = reverseN(head.next, n - 1);
+        ListNode last = reverseN(head.next, n - 1);
         head.next.next = head;
         head.next = cur;
         return last;
@@ -80,13 +80,13 @@ public class LinkedList {
 
     public static void main(String[] args) {
         String str = "[1,2,3,4,5]";
-        SingleNode head = PrintLinkedList.getInstance().stringToListNode(str);
+        ListNode head = PrintLinkedList.getInstance().stringToListNode(str);
 
 //        TreeNode loop = loop(head);
 //        TreeNode loop = loop2(head);
 //        TreeNode loop = reverse(head);
 //        TreeNode loop = reverseN(head, 3);
-        SingleNode loop = reverseRange(head, 2, 4);
+        ListNode loop = reverseRange(head, 2, 4);
 
         String string = PrintLinkedList.getInstance().listNodeToString(loop);
         System.out.println(string);

@@ -22,39 +22,47 @@ package com.laychv.leetcode;
 public class _704_BinarySearch {
 
     public static void main(String[] args) {
-        int[] array = new int[]{-1, 0, 3, 5, 9, 12};
-        System.out.println(binarySearch(array, 9));
-        array = new int[]{-1, 0, 3, 5, 9, 12};
-        System.out.println(binarySearch2(array, 9));
+        int[] x = {-1, 0, 3, 5, 9, 12};
+        System.out.println(binarySearch(x, 9));
+        int[] y = {-1, 0, 5};
+        System.out.println(binarySearch2(y, 2));
     }
 
+    /**
+     * [left,right]
+     * 左闭右闭
+     */
     public static int binarySearch(int[] nums, int target) {
         int left = 0;
-        int right = nums.length - 1;
-        while (left <= right) { // 注意 <=
+        int right = nums.length - 1;// [left,right]
+        while (left <= right) { // [left,right] 注意 <=
             int mid = left + ((right - left) >> 1); // 注意 left + (right - left) / 2
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] < target) {
-                left = mid + 1;// 注意 +1
+                left = mid + 1;// [left,right] 注意 +1
             } else if (nums[mid] > target) {
-                right = mid - 1;// 注意 -1
+                right = mid - 1;// [left,right] 注意 -1
             }
         }
         return -1;
     }
 
+    /**
+     * [left,right)
+     * 左闭右开
+     */
     public static int binarySearch2(int[] nums, int target) {
         int left = 0;
-        int right = nums.length - 1;
-        while (left <= right) {
+        int right = nums.length;// [left,right)
+        while (left < right) {//[left,right]
             int mid = left + (right - left) / 2;
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] < target) {
-                left = mid + 1;
+                left = mid + 1;//[left,right)
             } else if (nums[mid] > target) {
-                right = mid - 1;
+                right = mid; // [left,right)
             }
         }
         return -1;

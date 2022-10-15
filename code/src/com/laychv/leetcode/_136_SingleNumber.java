@@ -1,6 +1,6 @@
 package com.laychv.leetcode;
 
-import static com.laychv.common.PrintSingleNode.stringToIntegerArray;
+import static com.laychv.common.PrintListNode.stringToIntegerArray;
 
 /**
  * 136. 只出现一次的数字 🟢
@@ -20,7 +20,7 @@ import static com.laychv.common.PrintSingleNode.stringToIntegerArray;
  * <p>
  * https://leetcode.cn/problems/single-number/
  * <p>
- * 同源：136,137,260
+ * 136,137,260
  */
 public class _136_SingleNumber {
 

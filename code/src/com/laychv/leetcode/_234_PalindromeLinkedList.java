@@ -1,11 +1,10 @@
 package com.laychv.leetcode;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
 import java.util.Stack;
 
-import static com.laychv.common.PrintSingleNode.booleanToString;
-import static com.laychv.common.PrintSingleNode.stringToListNode;
+import static com.laychv.common.PrintListNode.stringToListNode;
 
 /**
  * 234.回文链表 🟢
@@ -22,8 +21,8 @@ class _234_PalindromeLinkedList {
 
     public static void main(String[] args) {
         String x = "[1,2,2,1]";
-        System.out.print(booleanToString(isPalindrome(stringToListNode(x))));
-        System.out.print(booleanToString(isPalindrome2(stringToListNode(x))));
+        System.out.print(isPalindrome(stringToListNode(x)));
+        System.out.print(isPalindrome2(stringToListNode(x)));
     }
 
     /**
@@ -32,9 +31,9 @@ class _234_PalindromeLinkedList {
      * @param head
      * @return
      */
-    public static boolean isPalindrome(SingleNode head) {
-        Stack<SingleNode> stack = new Stack<>();
-        SingleNode curr = head;
+    public static boolean isPalindrome(ListNode head) {
+        Stack<ListNode> stack = new Stack<>();
+        ListNode curr = head;
         while (curr != null) {
             stack.push(curr);
             curr = curr.next;
@@ -48,17 +47,17 @@ class _234_PalindromeLinkedList {
         return true;
     }
 
-    public static boolean isPalindrome2(SingleNode head) {
+    public static boolean isPalindrome2(ListNode head) {
         if (head == null || head.next == null) {
             return true;
         }
-        SingleNode curr = head;
-        SingleNode right = head.next;
+        ListNode curr = head;
+        ListNode right = head.next;
         while (curr.next != null && curr.next.next != null) {
             curr = curr.next.next;
             right = right.next;
         }
-        Stack<SingleNode> stack = new Stack<>();
+        Stack<ListNode> stack = new Stack<>();
         while (right != null) {
             stack.push(right);
             right = right.next;

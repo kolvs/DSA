@@ -1,9 +1,9 @@
 package com.laychv.leetcode;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
-import static com.laychv.common.PrintSingleNode.listNodeToString;
-import static com.laychv.common.PrintSingleNode.stringToListNode;
+import static com.laychv.common.PrintListNode.listNodeToString;
+import static com.laychv.common.PrintListNode.stringToListNode;
 
 /**
  * 83. 删除排序链表中的重复元素 🟢
@@ -27,8 +27,8 @@ class _83_RemoveDuplicatesFromSortedList {
     }
 
     // iterator
-    public static SingleNode deleteDuplicates(SingleNode head) {
-        SingleNode curr = head;
+    public static ListNode deleteDuplicates(ListNode head) {
+        ListNode curr = head;
         while (curr != null && curr.next != null) {
             // 相等,删除节点
             if (curr.val == curr.next.val) {
@@ -42,7 +42,7 @@ class _83_RemoveDuplicatesFromSortedList {
     }
 
     // recursion
-    public static SingleNode deleteDuplicates2(SingleNode head) {
+    public static ListNode deleteDuplicates2(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }

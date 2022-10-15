@@ -1,6 +1,6 @@
 package com.laychv.common;
 
-public class PrintSingleNode {
+public class PrintListNode {
 
     public static int[] stringToIntegerArray(String input) {
         input = input.trim();
@@ -18,21 +18,21 @@ public class PrintSingleNode {
         return output;
     }
 
-    public static SingleNode stringToListNode(String input) {
+    public static ListNode stringToListNode(String input) {
         // Generate array from the input
         int[] nodeValues = stringToIntegerArray(input);
 
         // Now convert that list into linked list
-        SingleNode dummyRoot = new SingleNode(0);
-        SingleNode ptr = dummyRoot;
+        ListNode dummyRoot = new ListNode(0);
+        ListNode ptr = dummyRoot;
         for (int item : nodeValues) {
-            ptr.next = new SingleNode(item);
+            ptr.next = new ListNode(item);
             ptr = ptr.next;
         }
         return dummyRoot.next;
     }
 
-    public static String listNodeToString(SingleNode node) {
+    public static String listNodeToString(ListNode node) {
         if (node == null) {
             return "[]";
         }
@@ -44,9 +44,4 @@ public class PrintSingleNode {
         }
         return "[" + result.substring(0, result.length() - 2) + "]";
     }
-
-    public static String booleanToString(boolean input) {
-        return input ? "True" : "False";
-    }
-
 }

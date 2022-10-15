@@ -1,9 +1,9 @@
 package com.laychv.leetcode;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
-import static com.laychv.common.PrintSingleNode.listNodeToString;
-import static com.laychv.common.PrintSingleNode.stringToListNode;
+import static com.laychv.common.PrintListNode.listNodeToString;
+import static com.laychv.common.PrintListNode.stringToListNode;
 
 /**
  * 92. 反转链表 II 🟡
@@ -25,18 +25,18 @@ public class _92_ReverseLinkedList_II {
         System.out.println(listNodeToString(reverseBetween(stringToListNode(x), left, right)));
     }
 
-    public static SingleNode reverseBetween(SingleNode head, int m, int n) {
+    public static ListNode reverseBetween(ListNode head, int m, int n) {
         // 虚拟头结点
-        SingleNode dummyNode = new SingleNode(-1);
+        ListNode dummyNode = new ListNode(-1);
         dummyNode.next = head;
-        SingleNode pre = dummyNode;
+        ListNode pre = dummyNode;
 
         for (int i = 0; i < m - 1; i++) {
             pre = pre.next;
         }
 
-        SingleNode next = null;
-        SingleNode curr = pre.next;
+        ListNode next = null;
+        ListNode curr = pre.next;
 
         for (int i = 0; i < n - m; i++) {
             next = curr.next;

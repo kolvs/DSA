@@ -5,7 +5,6 @@ import com.laychv.common.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import static com.laychv.common.PrintSingleNode.booleanToString;
 import static com.laychv.common.PrintTreeNode.stringToTreeNode;
 
 /**
@@ -33,8 +32,8 @@ public class _112_PathSum {
     public static void main(String[] args) {
         String s = "[5,4,8,11,null,13,4,7,2,null,null,null,1]";
         int sum = 22;
-        System.out.print(booleanToString(hasPathSum(stringToTreeNode(s), sum)));
-        System.out.print(booleanToString(hasPathSum2(stringToTreeNode(s), sum)));
+        System.out.print(hasPathSum(stringToTreeNode(s), sum));
+        System.out.print(hasPathSum2(stringToTreeNode(s), sum));
     }
 
     // 递归

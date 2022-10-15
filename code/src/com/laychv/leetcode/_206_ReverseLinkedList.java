@@ -1,9 +1,9 @@
 package com.laychv.leetcode;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
-import static com.laychv.common.PrintSingleNode.listNodeToString;
-import static com.laychv.common.PrintSingleNode.stringToListNode;
+import static com.laychv.common.PrintListNode.listNodeToString;
+import static com.laychv.common.PrintListNode.stringToListNode;
 
 /**
  * 206. 反转链表 🟢
@@ -28,13 +28,13 @@ class _206_ReverseLinkedList {
     }
 
     // 递归
-    public static SingleNode reverseList(SingleNode head) {
+    public static ListNode reverseList(ListNode head) {
         // 终止条件,当前或者下一个节点为空
         if (head == null || head.next == null) {
             return head;
         }
         // 获取最后一个节点
-        SingleNode cur = reverseList(head.next);
+        ListNode cur = reverseList(head.next);
         //
         head.next.next = head;
         //
@@ -43,12 +43,12 @@ class _206_ReverseLinkedList {
     }
 
     // 迭代
-    public SingleNode reverseList2(SingleNode head) {
-        SingleNode prev = null;
-        SingleNode curr = head;
+    public ListNode reverseList2(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
 
         while (curr != null) {
-            SingleNode temp = curr.next;
+            ListNode temp = curr.next;
             curr.next = prev;
             prev = curr;
             curr = temp;
@@ -56,9 +56,9 @@ class _206_ReverseLinkedList {
         return prev;
     }
 
-    public SingleNode reverseList3(SingleNode head) {
-        SingleNode prev = null;
-        SingleNode next = null;
+    public ListNode reverseList3(ListNode head) {
+        ListNode prev = null;
+        ListNode next = null;
 
         while (head != null) {
             next = head.next;

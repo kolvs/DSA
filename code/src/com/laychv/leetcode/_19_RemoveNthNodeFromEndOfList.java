@@ -1,9 +1,9 @@
 package com.laychv.leetcode;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
-import static com.laychv.common.PrintSingleNode.listNodeToString;
-import static com.laychv.common.PrintSingleNode.stringToListNode;
+import static com.laychv.common.PrintListNode.listNodeToString;
+import static com.laychv.common.PrintListNode.stringToListNode;
 
 /**
  * 19. 删除链表的倒数第N个节点 🟡
@@ -29,11 +29,11 @@ class _19_RemoveNthNodeFromEndOfList {
         System.out.print(listNodeToString(removeNthFromEnd(stringToListNode(x), n)));
     }
 
-    static public SingleNode removeNthFromEnd(SingleNode head, int n) {
-        SingleNode dummy = new SingleNode(0);
+    static public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode dummy = new ListNode(0);
         dummy.next = head;
-        SingleNode first = dummy;
-        SingleNode second = dummy;
+        ListNode first = dummy;
+        ListNode second = dummy;
         for (int i = 1; i <= n + 1; i++) {
             first = first.next;
         }

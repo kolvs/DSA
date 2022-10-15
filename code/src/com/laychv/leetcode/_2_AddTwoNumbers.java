@@ -1,9 +1,9 @@
 package com.laychv.leetcode;
 
-import com.laychv.common.SingleNode;
+import com.laychv.common.ListNode;
 
-import static com.laychv.common.PrintSingleNode.listNodeToString;
-import static com.laychv.common.PrintSingleNode.stringToListNode;
+import static com.laychv.common.PrintListNode.listNodeToString;
+import static com.laychv.common.PrintListNode.stringToListNode;
 
 /**
  * 2. 两数相加 🟡
@@ -41,15 +41,15 @@ public class _2_AddTwoNumbers {
         System.out.println(listNodeToString(addTwoNumbers2(stringToListNode(a), stringToListNode(b))));
     }
 
-    public static SingleNode addTwoNumbers(SingleNode l1, SingleNode l2) {
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if (l1 == null || l2 == null) return null;
         // 双指针
-        SingleNode n1 = l1;
-        SingleNode n2 = l2;
+        ListNode n1 = l1;
+        ListNode n2 = l2;
         // dummy
-        SingleNode dummy = new SingleNode(-1);
+        ListNode dummy = new ListNode(-1);
         // temp指向dummy结点
-        SingleNode temp = dummy;
+        ListNode temp = dummy;
         // 进位
         int carry = 0;
         while (n1 != null || n2 != null || carry > 0) {
@@ -64,15 +64,15 @@ public class _2_AddTwoNumbers {
             }
             carry = val / 10;
             val = val % 10;
-            temp.next = new SingleNode(val);
+            temp.next = new ListNode(val);
             temp = temp.next;
         }
         return dummy.next;
     }
 
-    public static SingleNode addTwoNumbers2(SingleNode l1, SingleNode l2) {
-        SingleNode dummy = new SingleNode(0);
-        SingleNode temp = dummy;
+    public static ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);
+        ListNode temp = dummy;
         int carry = 0;
 
         while (l1 != null || l2 != null) {
@@ -81,13 +81,13 @@ public class _2_AddTwoNumbers {
             int sum = x + y + carry;
             carry = sum / 10;
             sum = sum % 10;
-            temp.next = new SingleNode(sum);
+            temp.next = new ListNode(sum);
             temp = temp.next;
             if (l1 != null) l1 = l1.next;
             if (l2 != null) l2 = l2.next;
         }
         if (carry == 1) {
-            temp.next = new SingleNode(carry);
+            temp.next = new ListNode(carry);
         }
         return dummy.next;
     }
