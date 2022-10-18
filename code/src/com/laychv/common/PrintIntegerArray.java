@@ -105,4 +105,14 @@ public class PrintIntegerArray {
         }
         return "[" + result.substring(0, result.length() - 2) + "]";
     }
+
+    public static String[] stringToStringArray(String line) {
+        JsonArray jsonArray = JsonArray.readFrom(line);
+        String[] arr = new String[jsonArray.size()];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = jsonArray.get(i).asString();
+        }
+        return arr;
+    }
+
 }
