@@ -40,7 +40,8 @@ public class _1700_NumberOfStudentsUnableToEatLunch {
 
     public static void main(String[] args) {
         System.out.println("0-" + countStudents(new int[]{1, 1, 0, 0}, new int[]{0, 1, 0, 1}));
-        System.out.println("3-" + countStudents2(new int[]{1, 1, 1, 0, 0, 1}, new int[]{1, 0, 0, 0, 1, 1}));
+        System.out.println("0-" + countStudents2(new int[]{1, 1, 0, 0}, new int[]{0, 1, 0, 1}));
+        System.out.println("3-" + countStudents3(new int[]{1, 1, 1, 0, 0, 1}, new int[]{1, 0, 0, 0, 1, 1}));
     }
 
     public static int countStudents(int[] students, int[] sandwiches) {
@@ -50,8 +51,6 @@ public class _1700_NumberOfStudentsUnableToEatLunch {
         for (int student : students) {
             count[student]++;
         }
-
-        System.out.println(Arrays.toString(count));
 
         // 遍历三明治栈，若栈顶的三明治无法被取走，则剩下的人都吃不上了
         for (int sandwich : sandwiches) {
@@ -71,14 +70,26 @@ public class _1700_NumberOfStudentsUnableToEatLunch {
             ++cnt[v];
         }
 
-        System.out.println(Arrays.toString(cnt));
-
         for (int v : sandwiches) {
             if (cnt[v]-- == 0) {
                 return cnt[v ^ 1];
             }
-            System.out.println(cnt[v]);
         }
         return 0;
+    }
+
+    public static int countStudents3(int[] students, int[] sandwiches) {
+        int s1 = Arrays.stream(students).sum();// 圆形三明治
+        int s0 = students.length - s1;// 方形三明治
+        for (int sandwich : sandwiches) {
+            if (sandwich == 0 && s0 > 0) {
+                s0--;
+            } else if (sandwich == 1 && s1 > 0) {
+                s1--;
+            } else {
+                break;
+            }
+        }
+        return s0 + s1;
     }
 }

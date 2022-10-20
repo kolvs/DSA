@@ -96,33 +96,10 @@ next指针不是指向下一个结点，而是指向一个空地址 NULL，表�
 #### 双向循环链表
 
 
-
 ---
 
-
-
 ### 链表常见解题方法:
-
-##### 1.、快慢指针法
-
-快指针走2步,慢指针走1步
-
-###### 常见题目
-
-- [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/)
-
-- #### [876. 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/)
-
-##### 2、虚拟头结点法/伪结点法
-
-通过设置虚拟头结点
-
-###### 常见题目
-
-- #### [203. 移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/)
-
-##### 3、递归
-
-单链表反转
-
-##### 4、迭代
+- 快慢指针法，快指针走2步,慢指针走1步
+- 虚拟头结点法/伪结点法
+- 递归
+- 迭代

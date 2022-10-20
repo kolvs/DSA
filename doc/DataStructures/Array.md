@@ -27,28 +27,21 @@
 注：由于数组插入/删除效率不高，所以链表应运而生
 
 
+### 数组访问
+
+```java
+// 边界/迭代
+[0,n] 
+ln = [0,1,2,3]
+i < ln.length + 1
+i <= ln.length
+ln = [0,1,2,3)
+i < ln.length
+```
 
 ---
 
-
-
 ### 数组常见解题方法：
 
-#### 1、哈希表
-
-哈希表查询时间复杂度：O(1)
-
-##### 常见题目：
-
-- [1. 两数之和](https://leetcode.cn/problems/two-sum/)
-
-- [15. 三数之和](https://leetcode.cn/problems/3sum/)
-
-#### 2、双指针法
-
-##### 常见题目：
-
-- [26. 删除排序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/)
-
-- #### [27. 移除元素](https://leetcode.cn/problems/remove-element/)
-
+- 滑动窗口
+- 双指针法
