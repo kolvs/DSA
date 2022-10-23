@@ -5,7 +5,7 @@ import java.util.*;
 import static com.laychv.common.PrintIntegerArray.integerArrayToString;
 
 /**
- * 870. 优势洗牌 🟡
+ * 870. 优势洗牌 🟠
  * <p>
  * 输入：nums1 = [2,7,11,15], nums2 = [1,10,4,11]
  * 输出：[2,11,7,15]

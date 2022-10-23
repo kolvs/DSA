@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.Stack;
 
 /**
- * 856. 括号的分数 🟡
+ * 856. 括号的分数 🟠
  * <p>
  * 给定一个平衡括号字符串 S，按下述规则计算该字符串的分数：
  * () 得 1 分。

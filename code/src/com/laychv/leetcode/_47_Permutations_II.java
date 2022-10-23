@@ -7,7 +7,7 @@ import java.util.List;
 import static com.laychv.common.PrintIntegerArray.int2dListToString;
 
 /**
- * 47. 全排列 II 🟡
+ * 47. 全排列 II 🟠
  * <p>
  * 给定一个可包含重复数字的序列 nums ，按任意顺序 返回所有不重复的全排列。
  * <p>

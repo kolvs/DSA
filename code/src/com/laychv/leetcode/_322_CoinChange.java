@@ -3,7 +3,7 @@ package com.laychv.leetcode;
 import static com.laychv.common.PrintIntegerArray.stringToIntegerArray;
 
 /**
- * 322. 零钱兑换 🟡
+ * 322. 零钱兑换 🟠
  * <p>
  * 输入：coins = [1, 2, 5], amount = 11
  * 输出：3

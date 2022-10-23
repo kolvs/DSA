@@ -6,7 +6,7 @@ import java.util.List;
 import static com.laychv.common.PrintIntegerArray.int2dListToString;
 
 /**
- * 46.全排列 🟡
+ * 46.全排列 🟠
  * <p>
  * 给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。你可以 按任意顺序 返回答案。
  * <p>

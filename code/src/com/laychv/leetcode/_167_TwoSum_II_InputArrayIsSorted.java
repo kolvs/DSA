@@ -3,7 +3,7 @@ package com.laychv.leetcode;
 import static com.laychv.common.PrintIntegerArray.integerArrayToString;
 
 /**
- * 167. 两数之和 II - 输入有序数组 🟡
+ * 167. 两数之和 II - 输入有序数组 🟠
  * <p>
  * 输入：numbers = [2,7,11,15], target = 9
  * 输出：[1,2]

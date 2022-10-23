@@ -6,7 +6,7 @@ import static com.laychv.common.PrintListNode.listNodeToString;
 import static com.laychv.common.PrintListNode.stringToListNode;
 
 /**
- * 237. 删除链表中的节点 🟡
+ * 237. 删除链表中的节点 🟠
  * <p>
  * 输入：head = [4,5,1,9], node = 5
  * 输出：[4,1,9]
