@@ -5,7 +5,7 @@ import com.laychv.common.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import static com.laychv.common.PrintTreeNode.stringToTreeNode;
+import static com.laychv.common.TreeNode.stringToTreeNode;
 
 /**
  * 112. 路径总和 🟢

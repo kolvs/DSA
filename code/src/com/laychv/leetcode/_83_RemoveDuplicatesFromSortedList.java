@@ -2,8 +2,8 @@ package com.laychv.leetcode;
 
 import com.laychv.common.ListNode;
 
-import static com.laychv.common.PrintListNode.listNodeToString;
-import static com.laychv.common.PrintListNode.stringToListNode;
+import static com.laychv.common.ListNode.listNodeToString;
+import static com.laychv.common.ListNode.stringToListNode;
 
 /**
  * 83. 删除排序链表中的重复元素 🟢

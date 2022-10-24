@@ -2,7 +2,7 @@ package com.laychv.leetcode;
 
 import com.laychv.common.TreeNode;
 
-import static com.laychv.common.PrintTreeNode.stringToTreeNode;
+import static com.laychv.common.TreeNode.stringToTreeNode;
 
 /**
  * 100. 相同的树 🟢

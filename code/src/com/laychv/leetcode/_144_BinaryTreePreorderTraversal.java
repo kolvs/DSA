@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import static com.laychv.common.PrintTreeNode.integerArrayListToString;
-import static com.laychv.common.PrintTreeNode.stringToTreeNode;
+import static com.laychv.common.TreeNode.integerArrayListToString;
+import static com.laychv.common.TreeNode.stringToTreeNode;
 
 /**
  * 144. 二叉树的前序遍历 🟢

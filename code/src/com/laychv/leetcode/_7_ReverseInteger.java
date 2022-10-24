@@ -23,22 +23,23 @@ package com.laychv.leetcode;
 public class _7_ReverseInteger {
 
     public static void main(String[] args) {
-        int x = 123;
-        System.out.println(reverse(x));
+        System.out.println(reverse(123));
+        System.out.println(reverse(-123));
+        System.out.println(reverse(123456789));
     }
 
     public static int reverse(int x) {
-        int result = 0;
+        int res = 0;
         while (x != 0) {
             // 取值范围 -2^31 <  x < 2^31 -1
-            if (result < Integer.MIN_VALUE / 10 || result > Integer.MAX_VALUE / 10) {
+            if (res < Integer.MIN_VALUE / 10 || res > Integer.MAX_VALUE / 10) {
                 return 0;
             }
             // 返回结果
-            result = result * 10 + x % 10;
+            res = res * 10 + x % 10;
             // 分解原值
             x /= 10;
         }
-        return result;
+        return res;
     }
 }

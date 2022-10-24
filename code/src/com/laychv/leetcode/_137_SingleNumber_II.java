@@ -3,7 +3,7 @@ package com.laychv.leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.laychv.common.PrintListNode.stringToIntegerArray;
+import static com.laychv.common.ListNode.stringToIntegerArray;
 
 /**
  * 137. 只出现一次的数字 II 🟠

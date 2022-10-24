@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import static com.laychv.common.PrintListNode.stringToIntegerArray;
+import static com.laychv.common.ListNode.stringToIntegerArray;
 
 /**
  * 260. 只出现一次的数字 III 🟠

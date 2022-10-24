@@ -2,8 +2,8 @@ package com.laychv.offer_II;
 
 import com.laychv.common.ListNode;
 
-import static com.laychv.common.PrintListNode.listNodeToString;
-import static com.laychv.common.PrintListNode.stringToListNode;
+import static com.laychv.common.ListNode.listNodeToString;
+import static com.laychv.common.ListNode.stringToListNode;
 
 /**
  * 剑指 Offer II 024. 反转链表 🟢

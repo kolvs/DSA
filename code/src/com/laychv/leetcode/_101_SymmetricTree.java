@@ -4,7 +4,7 @@ import com.laychv.common.TreeNode;
 
 import java.util.LinkedList;
 
-import static com.laychv.common.PrintTreeNode.stringToTreeNode;
+import static com.laychv.common.TreeNode.stringToTreeNode;
 
 /**
  * 101. 对称二叉树 🟢

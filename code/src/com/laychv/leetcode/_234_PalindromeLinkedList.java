@@ -4,7 +4,7 @@ import com.laychv.common.ListNode;
 
 import java.util.Stack;
 
-import static com.laychv.common.PrintListNode.stringToListNode;
+import static com.laychv.common.ListNode.stringToListNode;
 
 /**
  * 234.回文链表 🟢

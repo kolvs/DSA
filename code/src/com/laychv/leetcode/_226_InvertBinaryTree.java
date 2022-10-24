@@ -2,8 +2,8 @@ package com.laychv.leetcode;
 
 import com.laychv.common.TreeNode;
 
-import static com.laychv.common.PrintTreeNode.stringToTreeNode;
-import static com.laychv.common.PrintTreeNode.treeNodeToString;
+import static com.laychv.common.TreeNode.stringToTreeNode;
+import static com.laychv.common.TreeNode.treeNodeToString;
 
 /**
  * 226. 翻转二叉树 🟢

@@ -1,6 +1,6 @@
 package com.laychv.leetcode;
 
-import static com.laychv.common.PrintListNode.stringToIntegerArray;
+import static com.laychv.common.ListNode.stringToIntegerArray;
 
 /**
  * 136. 只出现一次的数字 🟢

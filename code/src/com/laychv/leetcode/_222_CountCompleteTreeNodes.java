@@ -2,7 +2,7 @@ package com.laychv.leetcode;
 
 import com.laychv.common.TreeNode;
 
-import static com.laychv.common.PrintTreeNode.stringToTreeNode;
+import static com.laychv.common.TreeNode.stringToTreeNode;
 
 /**
  * 222. 完全二叉树的节点个数 🟢

@@ -5,7 +5,7 @@ import com.laychv.common.ListNode;
 import java.util.HashSet;
 import java.util.Set;
 
-import static com.laychv.common.PrintListNode.stringToListNode;
+import static com.laychv.common.ListNode.stringToListNode;
 
 /**
  * 142. 环形链表 II 🟠

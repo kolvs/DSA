@@ -54,8 +54,9 @@ import java.util.Map;
 public class _13_RomanToInteger {
 
     public static void main(String[] args) {
-        String x = "III";
-        System.out.println(romanToInt(x));
+        System.out.println("3->:" + romanToInt("III"));
+        System.out.println("58->:" + romanToInt("LVIII"));
+        System.out.println("1994->:" + romanToInt("MCMXCIV"));
     }
 
     /**

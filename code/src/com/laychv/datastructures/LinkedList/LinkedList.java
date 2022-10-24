@@ -1,7 +1,9 @@
 package com.laychv.datastructures.LinkedList;
 
 import com.laychv.common.ListNode;
-import com.laychv.common.PrintLinkedList;
+
+import static com.laychv.common.ListNode.listNodeToString;
+import static com.laychv.common.ListNode.stringToListNode;
 
 /**
  * 链表
@@ -80,16 +82,14 @@ public class LinkedList {
 
     public static void main(String[] args) {
         String str = "[1,2,3,4,5]";
-        ListNode head = PrintLinkedList.getInstance().stringToListNode(str);
+        ListNode head = stringToListNode(str);
 
 //        TreeNode loop = loop(head);
 //        TreeNode loop = loop2(head);
 //        TreeNode loop = reverse(head);
 //        TreeNode loop = reverseN(head, 3);
-        ListNode loop = reverseRange(head, 2, 4);
 
-        String string = PrintLinkedList.getInstance().listNodeToString(loop);
-        System.out.println(string);
+        System.out.println(listNodeToString(reverseRange(head, 2, 4)));
     }
 
 }

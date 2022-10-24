@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-import static com.laychv.common.PrintTreeNode.integerArrayListToString;
-import static com.laychv.common.PrintTreeNode.stringToTreeNode;
+import static com.laychv.common.TreeNode.integerArrayListToString;
+import static com.laychv.common.TreeNode.stringToTreeNode;
 
 /**
  * 145. 二叉树的后序遍历 🟢
