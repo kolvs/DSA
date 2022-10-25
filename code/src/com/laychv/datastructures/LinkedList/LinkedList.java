@@ -12,6 +12,18 @@ import static com.laychv.common.ListNode.stringToListNode;
  */
 public class LinkedList {
 
+    public static void main(String[] args) {
+        String str = "[1,2,3,4,5]";
+        ListNode head = stringToListNode(str);
+
+        ListNode loop = loop(head);
+        ListNode loop2 = loop2(head);
+        ListNode loop3 = reverse(head);
+        ListNode loop4 = reverseN(head, 3);
+
+        System.out.println(listNodeToString(reverseRange(head, 2, 4)));
+    }
+
     private static ListNode loop(ListNode head) {
         // 递归 取值 head.value
         if (head.next == null) return head;
@@ -78,18 +90,6 @@ public class LinkedList {
         head.next.next = head;
         head.next = cur;
         return last;
-    }
-
-    public static void main(String[] args) {
-        String str = "[1,2,3,4,5]";
-        ListNode head = stringToListNode(str);
-
-//        TreeNode loop = loop(head);
-//        TreeNode loop = loop2(head);
-//        TreeNode loop = reverse(head);
-//        TreeNode loop = reverseN(head, 3);
-
-        System.out.println(listNodeToString(reverseRange(head, 2, 4)));
     }
 
 }

@@ -8,8 +8,8 @@ import java.util.*;
  * 深度优先
  * 队列
  * LinkedList
- * Queue---ArrayDeque
- * Deque---ArrayDeque
+ * Queue---ArrayDeque/LinkedList
+ * Deque---ArrayDeque/LinkedList
  * Stack
  */
 public class BFS {

@@ -6,7 +6,7 @@ import static com.laychv.common.TreeNode.stringToTreeNode;
 
 /**
  * 104. 二叉树的最大深度 🟢
- *
+ * <p>
  * 给定一个二叉树，找出其最大深度。
  * <p>
  * 二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
@@ -15,16 +15,16 @@ import static com.laychv.common.TreeNode.stringToTreeNode;
  * <p>
  * 给定二叉树 [3,9,20,null,null,15,7]，
  * <p>
- * 3
- * / \
- * 9  20
- * /  \
- * 15   7
+ * -----3
+ * ----/-\
+ * ---9--20
+ * --/----\
+ * -1------7
  * 返回它的最大深度3
  * <p>
  * https://leetcode.cn/problems/maximum-depth-of-binary-tree
  */
-class _104_MaximumDepthofBinaryTree {
+class _104_MaximumDepthOfBinaryTree {
 
     public static void main(String[] args) {
         String x = "[3,9,20,null,null,15,7]";
@@ -33,9 +33,7 @@ class _104_MaximumDepthofBinaryTree {
     }
 
     public static int maxDepth(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
+        if (root == null) return 0;
         int left = maxDepth(root.left);
         int right = maxDepth(root.right);
         return Math.max(left, right) + 1;

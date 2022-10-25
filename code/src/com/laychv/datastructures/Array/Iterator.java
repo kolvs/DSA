@@ -11,7 +11,7 @@ public class Iterator {
     }
 
     private static void iterator(int[] a) {
-        // length = 10 , [0,10) , 0~9
+        // length = 10 , [0,10) / [0,9], 0~9
         int cnt1 = 0;
         for (int i = 0; i < a.length; i++) {
             System.out.print(i + ":");
@@ -22,7 +22,7 @@ public class Iterator {
         System.out.println("");
 
 
-        // length = 9 , [1,10) , 1~9
+        // length = 9 , [1,10) / [1,9], 1~9
         int cnt2 = 0;
         for (int i = 1; i < a.length; i++) {
             System.out.print(i + ":");
@@ -33,7 +33,7 @@ public class Iterator {
         System.out.println("");
 
 
-        // length = 9 , [0,9) , 0~8
+        // length = 9 , [0,9-1) / [0,8], 0~8
         int cnt3 = 0;
         for (int i = 0; i < a.length - 1; i++) {
             System.out.print(i + ":");

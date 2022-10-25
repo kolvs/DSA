@@ -16,3 +16,7 @@
 - 存在重复元素：[217](https://leetcode.cn/problems/contains-duplicate/)
   / [219](https://leetcode.cn/problems/contains-duplicate-ii/)
   / [220](https://leetcode.cn/problems/contains-duplicate-iii/)
+- 删除有序数组中的重复项：[26](https://leetcode.cn/problems/remove-duplicates-from-sorted-array)
+  / [80](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/)
+- 删除排序链表中的重复元素：[82](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
+  / [83](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)

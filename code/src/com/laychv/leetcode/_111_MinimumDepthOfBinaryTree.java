@@ -21,7 +21,7 @@ import static com.laychv.common.TreeNode.stringToTreeNode;
  * <p>
  * https://leetcode.cn/problems/minimum-depth-of-binary-tree
  */
-public class _111_MinimumDepthofBinaryTree {
+public class _111_MinimumDepthOfBinaryTree {
 
     public static void main(String[] args) {
         String x = "[2,null,3,null,4,null,5,null,6]";

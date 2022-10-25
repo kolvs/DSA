@@ -1,4 +1,4 @@
 package com.laychv.datastructures.Array;
 
-public class Retrieve {
+public class Read {
 }
