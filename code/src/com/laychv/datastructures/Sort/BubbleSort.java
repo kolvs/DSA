@@ -17,6 +17,25 @@ public class BubbleSort {
         System.out.println(Arrays.toString(array));
         sort3(array);
         System.out.println(Arrays.toString(array));
+        sort4(array);
+        System.out.println(Arrays.toString(array));
+    }
+
+    /**
+     * 未优化
+     * @param x
+     */
+    private static void sort4(int[] x) {
+        for (int i = 0; i < x.length - 1; i++) {
+            for (int j = 0; j < x.length - i - 1; j++) {
+                int t = 0, a = x[j], b = x[j + 1];
+                if (x[j] > x[j + 1]) {
+                    t = x[j];
+                    x[j] = x[j + 1];
+                    x[j + 1] = t;
+                }
+            }
+        }
     }
 
     /**

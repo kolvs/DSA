@@ -26,6 +26,7 @@ public class _7_ReverseInteger {
         System.out.println(reverse(123));
         System.out.println(reverse(-123));
         System.out.println(reverse(123456789));
+        System.out.println(reverse(-2147483412));
     }
 
     public static int reverse(int x) {

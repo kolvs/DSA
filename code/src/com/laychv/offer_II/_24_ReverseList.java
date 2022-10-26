@@ -25,7 +25,7 @@ public class _24_ReverseList {
 
     public static void main(String[] args) {
         String x = "[1,2,3,4,5]";
-        System.out.print(listNodeToString(reverseList(stringToListNode(x))));
+        System.out.println(listNodeToString(reverseList(stringToListNode(x))));
     }
 
     public static ListNode reverseList(ListNode head) {

@@ -3,6 +3,8 @@
 - [53.最大子数组和](https://leetcode.cn/problems/maximum-subarray/)
   / [1800.最大升序子数组和](https://leetcode.cn/problems/maximum-ascending-subarray-sum/)
 - [27.移除元素](https://leetcode.cn/problems/remove-element/) / [283.移动零](https://leetcode.cn/problems/move-zeroes/)
+- [934. 最短的桥](https://leetcode.cn/problems/shortest-bridge/)
+  / [827. 最大人工岛](https://leetcode.cn/problems/making-a-large-island/)
 
 **系列题目**
 
@@ -20,3 +22,12 @@
   / [80](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/)
 - 删除排序链表中的重复元素：[82](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
   / [83](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
+- 反转字符串：[344](https://leetcode.cn/problems/reverse-string/)
+  / [541](https://leetcode.cn/problems/reverse-string-ii/)
+
+**关键字**
+
+- 回文
+- 反转
+- 重复
+- 求和
