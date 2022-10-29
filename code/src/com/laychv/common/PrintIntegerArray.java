@@ -129,5 +129,17 @@ public class PrintIntegerArray {
         return arr;
     }
 
+    public static List<List<String>> stringToString2dArray(String input) {
+        JsonArray jsonArray = JsonArray.readFrom(input);
+        if (jsonArray.size() == 0) {
+            return new ArrayList<>();
+        }
+        List<List<String>> list = new ArrayList<>(jsonArray.size());
+        for (int i = 0; i < jsonArray.size(); i++) {
+            JsonArray cols = jsonArray.get(i).asArray();
+            list.add(List.of(stringToStringArray(cols.toString())));
+        }
+        return list;
+    }
 
 }
