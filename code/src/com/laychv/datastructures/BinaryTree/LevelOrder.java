@@ -17,7 +17,8 @@ public class LevelOrder {
 
     public static void main(String[] args) {
         String x = "[3,9,20,null,null,15,7]";
-        System.out.println("[[3],[9, 20],[15, 7]]->:" + int2dListToString(levelOrder(stringToTreeNode(x))));
+        System.out.println("[[3],[9, 20],[15, 7]]->:");
+        System.out.println(int2dListToString(levelOrder(stringToTreeNode(x))));
     }
 
     /**

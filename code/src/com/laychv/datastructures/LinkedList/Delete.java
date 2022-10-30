@@ -2,9 +2,27 @@ package com.laychv.datastructures.LinkedList;
 
 import com.laychv.common.ListNode;
 
-public class DeleteByKey {
+public class Delete {
 
     ListNode head;
+
+    /**
+     * 测试
+     */
+    public static void main(String[] args) {
+        Delete list = new Delete();
+        // insert
+        insert(list, 1);
+        insert(list, 2);
+        insert(list, 3);
+        insert(list, 4);
+        // print
+        printList(list);
+        // delete by key
+        deleteByKey(list, 4);
+        // print
+        printList(list);
+    }
 
     /**
      * insert
@@ -12,7 +30,7 @@ public class DeleteByKey {
      * @param list
      * @param data
      */
-    public static void insert(DeleteByKey list, int data) {
+    public static void insert(Delete list, int data) {
         ListNode new_node = new ListNode(data);
         new_node.next = null;
 
@@ -33,7 +51,7 @@ public class DeleteByKey {
      *
      * @param list
      */
-    public static void printList(DeleteByKey list) {
+    public static void printList(Delete list) {
         ListNode node = list.head;
         while (node != null) {
             System.out.println(node.val + "...");
@@ -47,7 +65,7 @@ public class DeleteByKey {
      * @param list
      * @param key
      */
-    public static void deleteByKey(DeleteByKey list, int key) {
+    public static void deleteByKey(Delete list, int key) {
         ListNode curr = list.head;
         ListNode prev = null;
         if (curr != null && curr.val == key) {
@@ -66,23 +84,4 @@ public class DeleteByKey {
         }
     }
 
-    /**
-     * 测试
-     *
-     * @param args
-     */
-    public static void main(String[] args) {
-        DeleteByKey list = new DeleteByKey();
-        // insert
-        insert(list, 1);
-        insert(list, 2);
-        insert(list, 3);
-        insert(list, 4);
-        // print
-        printList(list);
-        // delete by key
-        deleteByKey(list, 4);
-        // print
-        printList(list);
-    }
 }

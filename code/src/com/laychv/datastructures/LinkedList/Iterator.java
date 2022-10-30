@@ -10,7 +10,7 @@ import static com.laychv.common.ListNode.stringToListNode;
  * 迭代框架
  * 迭代访问/递归访问
  */
-public class LinkedList {
+public class Iterator {
 
     public static void main(String[] args) {
         String str = "[1,2,3,4,5]";
@@ -41,9 +41,6 @@ public class LinkedList {
 
     /**
      * 递归版 反转链表
-     *
-     * @param head
-     * @return
      */
     private static ListNode reverse(ListNode head) {
         if (head.next == null) return head;
@@ -75,10 +72,6 @@ public class LinkedList {
 
     /**
      * 反转链表前N节点
-     *
-     * @param head
-     * @param n
-     * @return
      */
     private static ListNode reverseN(ListNode head, int n) {
         ListNode cur = null;
