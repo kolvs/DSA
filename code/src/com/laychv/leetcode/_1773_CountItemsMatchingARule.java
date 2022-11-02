@@ -1,8 +1,9 @@
 package com.laychv.leetcode;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import static com.laychv.common.PrintIntegerArray.stringToString2dArray;
 
 /**
  * 1773. 统计匹配检索规则的物品数量 🟢
@@ -34,30 +35,14 @@ import java.util.List;
 public class _1773_CountItemsMatchingARule {
 
     public static void main(String[] args) {
-        String items = "[[phone,blue,pixel],[computer,silver,lenovo],[phone,gold,iphone]]";
-
-        List<List<String>> item = new ArrayList<>();
-        List<String> s = new ArrayList<>();
-        s.add("phone");
-        s.add("blue");
-        s.add("pixel");
-        item.add(s);
-        List<String> s2 = new ArrayList<>();
-        s2.add("computer");
-        s2.add("silver");
-        s2.add("lenovo");
-        item.add(s2);
-        List<String> s3 = new ArrayList<>();
-        s3.add("phone");
-        s3.add("gold");
-        s3.add("iphone");
-        item.add(s3);
+        String item = "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]";
 
         String ruleKey = "color";
         String ruleValue = "silver";
-        System.out.println("1->:" + countMatches(item, ruleKey, ruleValue));
-        System.out.println("1->:" + countMatches2(item, ruleKey, ruleValue));
-        System.out.println("1->:" + countMatches3(item, ruleKey, ruleValue));
+
+        System.out.println("1->:" + countMatches(stringToString2dArray(item), ruleKey, ruleValue));
+        System.out.println("1->:" + countMatches2(stringToString2dArray(item), ruleKey, ruleValue));
+        System.out.println("1->:" + countMatches3(stringToString2dArray(item), ruleKey, ruleValue));
     }
 
     /**
