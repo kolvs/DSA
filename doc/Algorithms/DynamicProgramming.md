@@ -10,7 +10,7 @@ Dynamic Programming
 
 |                                         LeetCode                                         | Level |                                     力扣                                     |
 |:----------------------------------------------------------------------------------------:|:-----:|:--------------------------------------------------------------------------:|
-|          [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)           |  🟩   |          [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)          |
-|              [322. Coin Change](https://leetcode.com/problems/coin-change/)              |  🟧   |           [322. 零钱兑换](https://leetcode.cn/problems/coin-change/)           |
-|         [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)         |  🟩   |        [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/)        |
-| [940. Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/) |  🟥   |  [940. 不同的子序列 II](https://leetcode.cn/problems/distinct-subsequences-ii/)  |
+|          [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)           |  🟢   |          [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)          |
+|              [322. Coin Change](https://leetcode.com/problems/coin-change/)              |  🟠   |           [322. 零钱兑换](https://leetcode.cn/problems/coin-change/)           |
+|         [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)         |  🟢   |        [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/)        |
+| [940. Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/) |  🔴   |  [940. 不同的子序列 II](https://leetcode.cn/problems/distinct-subsequences-ii/)  |

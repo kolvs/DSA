@@ -7,4 +7,4 @@ Binary Search
 
 |                              LeetCode                              | Level |                            力扣                            |
 |:------------------------------------------------------------------:|:-----:|:--------------------------------------------------------:|
-| [704. Binary Search](https://leetcode.com/problems/binary-search/) |  🟩   | [704. 二分查找](https://leetcode.cn/problems/binary-search/) |
+| [704. Binary Search](https://leetcode.com/problems/binary-search/) |  🟢   | [704. 二分查找](https://leetcode.cn/problems/binary-search/) |
