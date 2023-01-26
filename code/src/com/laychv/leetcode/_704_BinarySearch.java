@@ -40,9 +40,9 @@ public class _704_BinarySearch {
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] < target) {
-                left = mid + 1;// [left,right] 注意 +1
+                left = mid + 1;// [mid + 1,right] 注意 +1
             } else if (nums[mid] > target) {
-                right = mid - 1;// [left,right] 注意 -1
+                right = mid - 1;// [left,mid - 1] 注意 -1
             }
         }
         return -1;
