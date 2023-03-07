@@ -21,7 +21,7 @@ import static com.laychv.common.ListNode.stringToListNode;
  * <p>
  * https://leetcode.cn/problems/UHnkqh/
  */
-public class _24_ReverseList {
+public class _024_ReverseList {
 
     public static void main(String[] args) {
         String x = "[1,2,3,4,5]";

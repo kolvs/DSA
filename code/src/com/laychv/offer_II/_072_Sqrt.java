@@ -18,7 +18,7 @@ package com.laychv.offer_II;
  * 0 <= x <= 2^31 - 1
  * https://leetcode.cn/problems/jJ0w9p/description/
  */
-public class _72_Sqrt {
+public class _072_Sqrt {
 
     public static void main(String[] args) {
         System.out.println(mySqrt(8));
