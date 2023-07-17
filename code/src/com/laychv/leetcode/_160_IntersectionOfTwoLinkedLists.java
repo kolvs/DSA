@@ -2,6 +2,7 @@ package com.laychv.leetcode;
 
 import com.laychv.common.ListNode;
 
+import static com.laychv.common.ListNode.listNodeToString;
 import static com.laychv.common.ListNode.stringToListNode;
 
 /**
@@ -23,7 +24,8 @@ public class _160_IntersectionOfTwoLinkedLists {
 
     public static void main(String[] args) {
         ListNode node = getIntersectionNode(stringToListNode("[4,1,8,4,5]"), stringToListNode("[5,6,1,8,4,5]"));
-        System.out.println(node);
+        String out = listNodeToString(node);
+        System.out.print(out);
     }
 
     public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
@@ -35,6 +37,17 @@ public class _160_IntersectionOfTwoLinkedLists {
             else a = a.next;
             if (b == null) b = headA;
             else b = b.next;
+        }
+        return a;
+    }
+
+    public static ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) return null;
+
+        ListNode a = headA, b = headB;
+        while (a != b) {
+            a = a == null ? headB : a.next;
+            b = b == null ? headA : b.next;
         }
         return a;
     }
