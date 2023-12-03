@@ -1,7 +1,5 @@
 package com.laychv.leetcode;
 
-import com.laychv.common.tools.CountTimes;
-
 /**
  * 58. 最后一个单词的长度 🟢
  * <p>
@@ -44,7 +42,6 @@ public class _58_LengthOfLastWord {
     }
 
     /***倒序遍历***/
-    @CountTimes
     public static int lengthOfLastWord(String s) {
         int index = s.length() - 1;
         while (s.charAt(index) == ' ') {
