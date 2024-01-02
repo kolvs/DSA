@@ -19,11 +19,6 @@ package com.laychv.leetcode;
  */
 public class _69_Sqrt {
 
-    public static void main(String[] args) {
-        System.out.println(mySqrt(8));
-        System.out.println(mySqrt(4));
-    }
-
     /**
      * binary search
      * [left,right]
@@ -46,5 +41,33 @@ public class _69_Sqrt {
             }
         }
         return res;
+    }
+
+    /**
+     * binary search
+     */
+    static int mySqrt2(int x) {
+        int l = 0, r = x, res = -1;
+        while (l <= r) {
+            int m = l + (r - l) / 2;
+            if ((long) m * m <= x) {
+                l = m + 1;
+                res = m;
+            } else {
+                r = m - 1;
+            }
+        }
+        return res;
+    }
+
+    /**
+     * brute force
+     */
+    static int mySqrt3(int x) {
+        long a = 0;
+        for (long i = 0; i * i <= x; i++) {
+            a = i;
+        }
+        return (int)a;
     }
 }
