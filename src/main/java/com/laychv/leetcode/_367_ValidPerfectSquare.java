@@ -20,16 +20,6 @@ package com.laychv.leetcode;
  */
 public class _367_ValidPerfectSquare {
 
-    public static void main(String[] args) {
-        System.out.println(isPerfectSquare(16));
-        System.out.println(isPerfectSquare(14));
-        System.out.println(isPerfectSquare(1));
-
-        System.out.println(isPerfectSquare2(16));
-        System.out.println(isPerfectSquare2(14));
-        System.out.println(isPerfectSquare2(1));
-    }
-
     /*** robust ***/
     static boolean isPerfectSquare(int num) {
         if (num == 1) return true;
@@ -46,12 +36,12 @@ public class _367_ValidPerfectSquare {
      * 因为num是正整数，所以若正整数x满足x×x=num，则x一定满足1≤x≤num。
      */
     static boolean isPerfectSquare2(int num) {
-        // [left,right]
         int left = 0;
         int right = num;
+        // [left,right]
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            int square = mid * mid;
+            long square = (long)mid * mid;//
             if (square < num) {
                 left = mid + 1;
             } else if (square > num) {
