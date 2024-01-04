@@ -32,16 +32,26 @@ public class _367_ValidPerfectSquare {
     }
 
     /**
+     * brute force
+     */
+    static boolean isPerfectSquare2(int num) {
+        for (long i = 0; i * i <= num; i++) {
+            if (i == num) return true;
+        }
+        return false;
+    }
+
+    /**
      * binary search
      * 因为num是正整数，所以若正整数x满足x×x=num，则x一定满足1≤x≤num。
      */
-    static boolean isPerfectSquare2(int num) {
+    static boolean isPerfectSquare3(int num) {
         int left = 0;
         int right = num;
         // [left,right]
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            long square = (long)mid * mid;//
+            long square = (long) mid * mid;//
             if (square < num) {
                 left = mid + 1;
             } else if (square > num) {
@@ -51,6 +61,23 @@ public class _367_ValidPerfectSquare {
             }
         }
         return false;
+    }
+
+    /**
+     * binary search
+     * [left,right)
+     */
+    static boolean isPerfectSquare4(int num) {
+        long l = 0, r = num;
+        while (l < r) {
+            long m = l + r + 1 >> 1;
+            if (m * m <= num) {
+                l = m;
+            } else {
+                r = m - 1;
+            }
+        }
+        return r * r == num;
     }
 
 }
