@@ -38,13 +38,6 @@ import java.util.Set;
  */
 public class _26_RemoveDuplicatesFromSortedArray {
 
-    public static void main(String[] args) {
-        System.out.println("2->:" + removeDuplicates(new int[]{1, 1, 2}));
-        System.out.println("5->:" + removeDuplicates2(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}));
-        System.out.println("5->:" + removeDuplicates3(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}));
-        System.out.println("5->:" + removeDuplicates4(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}));
-    }
-
     /**
      * set
      * error for leetcode
@@ -65,8 +58,10 @@ public class _26_RemoveDuplicatesFromSortedArray {
         return -1;
     }
 
-    // 双指针
-    public static int removeDuplicates2(int[] nums) {
+    /**
+     * 双指针
+     */
+    public static int removeDuplicates0(int[] nums) {
         int j = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != nums[j]) {
@@ -76,6 +71,16 @@ public class _26_RemoveDuplicatesFromSortedArray {
             }
         }
         return j + 1;
+    }
+
+    static int removeDuplicates2(int[] nums) {
+        int i = 0;
+        for (int n : nums) {
+            if (nums[i] != n) {
+                nums[++i] = n;//
+            }
+        }
+        return ++i;//
     }
 
     /**
@@ -99,8 +104,10 @@ public class _26_RemoveDuplicatesFromSortedArray {
         return slow + 1;
     }
 
-    // 移除重复项通用解法
-    // k为重复项的个数
+    /**
+     * 移除重复项通用解法
+     * k为重复项的个数
+     */
     public static int removeDuplicates4(int[] nums) {
         return remove(nums, 1);
     }
