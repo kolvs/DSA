@@ -1,7 +1,5 @@
 package com.laychv.leetcode;
 
-import static com.laychv.common.PrintIntegerArray.integerArrayToString;
-
 /**
  * 27. 移除元素 🟢
  * <p>
@@ -17,19 +15,6 @@ import static com.laychv.common.PrintIntegerArray.integerArrayToString;
  */
 public class _27_RemoveElement {
 
-    public static void main(String[] args) {
-
-        int[] a = {3, 2, 2, 3};
-        int av = 3;
-//        System.out.println(integerArrayToString(a, removeElement(a, av)));
-        System.out.println(removeElement(a,av));
-
-        int[] y = {0, 1, 2, 2, 3, 0, 4, 2};
-        int yv = 2;
-        System.out.println(integerArrayToString(y, removeElement3(y, yv)));
-//        System.out.println(removeElement3(y, yv));
-    }
-
     /**
      * 标签：拷贝覆盖
      * 主要思路是遍历数组nums，每次取出的数字变量为num，同时设置一个下标ans
@@ -44,8 +29,7 @@ public class _27_RemoveElement {
         int i = 0;
         for (int num : nums) {
             if (num != val) {
-                nums[i] = num;
-                i++;
+                nums[i++] = num;
             }
         }
         return i;
