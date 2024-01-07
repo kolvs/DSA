@@ -1,7 +1,5 @@
 package com.laychv.leetcode;
 
-import java.util.Arrays;
-
 /**
  * 283. 移动零 🟢
  * <p>
@@ -20,16 +18,6 @@ import java.util.Arrays;
  * https://leetcode.cn/problems/move-zeroes/?favorite=2cktkvj
  */
 public class _283_MoveZeroes {
-
-    public static void main(String[] args) {
-        int[] x = {0, 1, 0, 3, 12};
-        moveZeroes(x);
-        System.out.println(Arrays.toString(x));
-
-        int[] y = {0, 0, 1};
-        moveZeroes2(y);
-        System.out.println(Arrays.toString(y));
-    }
 
     /**
      * 两次遍历
@@ -65,5 +53,26 @@ public class _283_MoveZeroes {
                 nums[j++] = t;
             }
         }
+    }
+
+    /**
+     * 一次遍历，使用双指针
+     */
+    static void moveZeroes3(int[] nums) {
+        if (nums.length == 0) return;
+        int l = 0, r = 0;
+        while (r < nums.length) {
+            if (nums[r] != 0) {
+                swap(nums, l, r);//
+                l++;
+            }
+            r++;
+        }
+    }
+
+    private static void swap(int[] nums, int i, int j) {
+        int t = nums[i];
+        nums[i] = nums[j];
+        nums[j] = t;
     }
 }
