@@ -19,13 +19,6 @@ import java.util.Arrays;
  */
 public class _977_SquaresOfASortedArray {
 
-    public static void main(String[] args) {
-        int[] x = {-4, -1, 0, 3, 10};
-        System.out.println(Arrays.toString(sortedSquares(x)));
-        int[] y = {-7, -3, 2, 3, 11};
-        System.out.println(Arrays.toString(sortedSquares(y)));
-    }
-
     static int[] sortedSquares(int[] nums) {
         int[] res = new int[nums.length];
         for (int i = 0, j = nums.length - 1, k = nums.length - 1; i <= j; ) {
@@ -37,6 +30,53 @@ public class _977_SquaresOfASortedArray {
                 j--;
             }
             k--;
+        }
+        return res;
+    }
+
+    static int[] sortedSquares2(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] *= nums[i];//
+        }
+        Arrays.sort(nums);//
+        return nums;
+    }
+
+    static int[] sortedSquares3(int[] nums) {
+        int[] res = new int[nums.length];
+        for (int i = nums.length - 1; i >= 0; i--) {
+            res[i] = nums[i] * nums[i];
+        }
+        Arrays.sort(res);
+        return res;
+    }
+
+    static int[] sortedSquares4(int[] nums) {
+        int l = 0;
+        int r = nums.length - 1;
+        int k = nums.length - 1;//
+        int[] res = new int[nums.length];
+
+        while (l <= r) {//
+            if (nums[l] * nums[l] > nums[r] * nums[r]) {
+                res[k--] = nums[l] * nums[l++];//
+            } else {
+                res[k--] = nums[r] * nums[r--];//
+            }
+        }
+
+        return res;
+    }
+
+    static int[] sortedSquares5(int[] nums) {
+        int[] res = new int[nums.length];
+        int k = nums.length - 1;
+        for (int i = 0, j = nums.length - 1; i <= j; ) {
+            if (nums[i] * nums[i] > nums[j] * nums[j]) {
+                res[k--] = nums[i] * nums[i++];
+            } else {
+                res[k--] = nums[j] * nums[j--];
+            }
         }
         return res;
     }
