@@ -44,6 +44,8 @@ public class _904_FruitIntoBaskets {
         System.out.println(totalFruit(new int[]{0, 1, 2, 2}));
         System.out.println(totalFruit(new int[]{1, 2, 3, 2, 2}));
         System.out.println(totalFruit(new int[]{3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4}));
+
+        System.out.println(totalFruit2(new int[]{1, 2, 3, 2, 2}));
     }
 
     /**
@@ -65,6 +67,27 @@ public class _904_FruitIntoBaskets {
                 left++;
             }
             res = Math.max(res, right - left + 1);
+        }
+        return res;
+    }
+
+    /**
+     * 滑动窗口
+     */
+    public static int totalFruit2(int[] fruits) {
+        int res = 0;
+        int[] cnt = new int[fruits.length];
+
+        for (int i = 0, j = 0, sum = 0; i < fruits.length; i++) {
+            if (++cnt[fruits[i]] == 1) {
+                sum++;
+            }
+            while (sum > 2) {
+                if (--cnt[fruits[j++]] == 0) {
+                    sum--;
+                }
+            }
+            res = Math.max(res, i - j + 1);
         }
         return res;
     }
