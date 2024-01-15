@@ -28,8 +28,14 @@ public class _82_RemoveDuplicatesFromSortedList_II {
     public static void main(String[] args) {
         System.out.println("[1,2,5]->:" + listNodeToString(deleteDuplicates(stringToListNode("[1,2,3,3,4,4,5]"))));
         System.out.println("[2,3]->:" + listNodeToString(deleteDuplicates(stringToListNode("[1,1,1,2,3]"))));
+
+        System.out.println("[1,2,5]->:" + listNodeToString(deleteDuplicates2(stringToListNode("[1,2,3,3,4,4,5]"))));
+        System.out.println("[2,3]->:" + listNodeToString(deleteDuplicates2(stringToListNode("[1,1,1,2,3]"))));
     }
 
+    /**
+     * 一次遍历
+     */
     public static ListNode deleteDuplicates(ListNode head) {
         if (head == null) return null;
 
@@ -50,4 +56,23 @@ public class _82_RemoveDuplicatesFromSortedList_II {
 
         return dummy.next;
     }
+
+    /**
+     * 递归
+     */
+    public static ListNode deleteDuplicates2(ListNode head) {
+        if (head == null) return null;
+
+        if (head.next != null && head.val == head.next.val) {
+            while (head.next != null && head.val == head.next.val) {
+                head = head.next;
+            }
+            return deleteDuplicates(head.next);
+        } else {
+            head.next = deleteDuplicates(head.next);
+        }
+
+        return head;
+    }
+
 }
