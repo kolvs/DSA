@@ -26,6 +26,7 @@ class _203_RemoveLinkedListElements {
         int val = 6;
         System.out.print(listNodeToString(removeElements(stringToListNode(x), val)));
         System.out.print(listNodeToString(removeElements2(stringToListNode(x), val)));
+        System.out.print(listNodeToString(removeElements3(stringToListNode(x), val)));
     }
 
     //  通过虚拟头结点方式删除
@@ -62,5 +63,14 @@ class _203_RemoveLinkedListElements {
             curr = curr.next;
         }
         return dummyHead.next;
+    }
+
+    /**
+     * 递归
+     */
+    public static ListNode removeElements3(ListNode head, int val) {
+        if (head == null) return null;
+        head.next = removeElements3(head.next, val);
+        return head.val == val ? head.next : head;
     }
 }
