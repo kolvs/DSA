@@ -27,17 +27,19 @@ package com.laychv.leetcode;
  * <p>
  * https://leetcode.cn/problems/matrix-diagonal-sum/description/
  */
-public class _1678_GoalParserInterpretation {
+public class _1572_MatrixDiagonalSum {
 
     public static void main(String[] args) {
-
+        int[][] mat = {{1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}};
+        System.out.println(diagonalSum(mat));
+        System.out.println(diagonalSum2(mat));
     }
 
     public static int diagonalSum(int[][] mat) {
         int len = mat.length, sum = 0;
         for (int i = 0; i < len; i++) {
             for (int j = 0; j < len; ++j) {
-                if (i == j || i + j == n - 1) {
+                if (i == j || i + j == len - 1) {
                     sum += mat[i][j];
                 }
             }
@@ -46,10 +48,10 @@ public class _1678_GoalParserInterpretation {
     }
 
     public static int diagonalSum2(int[][] mat) {
-        int len = mat.length, sum = 0, mid = n / 2;
+        int len = mat.length, sum = 0, mid = len / 2;
         for (int i = 0; i < len; i++) {
-            sum += mat[i][j] + mat[i][n - 1 - i];
+            sum += mat[i][i] + mat[i][len - 1 - i];
         }
-        return sum - mat[mid][mid] * (n & 1);
+        return sum - mat[mid][mid] * (len & 1);
     }
 }
