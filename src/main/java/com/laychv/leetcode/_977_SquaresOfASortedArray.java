@@ -81,4 +81,48 @@ public class _977_SquaresOfASortedArray {
         return res;
     }
 
+    static int[] sortedSquares6(int[] nums) {
+        int n = nums.length;
+        int left = 0;
+        int right = n - 1;
+        int index = n - 1;
+        int[] res = new int[n];
+
+        while (left <= right) {
+            // 计算平方值（注意：这里不计算绝对值，直接比较平方值）
+            int leftSqu = nums[left] * nums[left];
+            int rightSqu = nums[right] * nums[right];
+
+            // 比较平方值，将较大的值放入结果数组的末尾
+            if (leftSqu > rightSqu) {
+                // index-- 结果数组指针左移
+                res[index--] = leftSqu; // 左侧平方值更大
+                left++; // 左指针右移
+            } else {
+                res[index--] = rightSqu; // 右侧平方值更大或相等
+                right--; // 右指针左移
+            }
+        }
+
+        return res;
+    }
+
+    static int[] sortedSquares7(int[] nums) {
+        int n = nums.length;
+        int[] res = new int[n];
+
+        for (int left = 0, right = n - 1, index = n - 1; left <= right; ) {
+            int leftSqu = nums[left] * nums[left];
+            int rightSqu = nums[right] * nums[right];
+
+            if (leftSqu > rightSqu) {
+                res[index--] = leftSqu;
+                left++;
+            } else {
+                res[index--] = rightSqu;
+                right--;
+            }
+        }
+        return res;
+    }
 }

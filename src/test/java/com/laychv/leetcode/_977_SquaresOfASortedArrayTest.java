@@ -33,4 +33,14 @@ class _977_SquaresOfASortedArrayTest {
     void sortedSquares5() {
         System.out.println(Arrays.toString(_977_SquaresOfASortedArray.sortedSquares5(y)));
     }
+
+    @Test
+    void sortedSquares6() {
+        System.out.println(Arrays.toString(_977_SquaresOfASortedArray.sortedSquares6(x)));
+    }
+
+    @Test
+    void sortedSquares7() {
+        System.out.println(Arrays.toString(_977_SquaresOfASortedArray.sortedSquares7(x)));
+    }
 }
