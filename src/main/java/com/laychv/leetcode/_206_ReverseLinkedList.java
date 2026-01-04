@@ -24,7 +24,9 @@ class _206_ReverseLinkedList {
 
     public static void main(String[] args) {
         String x = "[1,2,3,4,5]";
-        System.out.print(listNodeToString(reverseList(stringToListNode(x))));
+        System.out.println(listNodeToString(reverseList(stringToListNode(x))));
+        System.out.println(listNodeToString(reverseList2(stringToListNode(x))));
+        System.out.println(listNodeToString(reverseList4(stringToListNode(x))));
     }
 
     // 递归
@@ -42,8 +44,8 @@ class _206_ReverseLinkedList {
         return cur;
     }
 
-    // 迭代
-    public ListNode reverseList2(ListNode head) {
+    // 迭代-双指针
+    public static ListNode reverseList2(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;
 
@@ -56,7 +58,8 @@ class _206_ReverseLinkedList {
         return prev;
     }
 
-    public ListNode reverseList3(ListNode head) {
+    // 迭代-双指针
+    public static ListNode reverseList3(ListNode head) {
         ListNode prev = null;
         ListNode next = null;
 
@@ -67,5 +70,20 @@ class _206_ReverseLinkedList {
             head = next;
         }
         return prev;
+    }
+
+    // 虚拟头结点
+    public static ListNode reverseList4(ListNode head) {
+        // 创建虚拟头结点
+        ListNode dum = new ListNode(0);
+        ListNode cur = head;
+
+        while (cur != null) {
+            ListNode temp = cur.next;
+            cur.next = dum.next;
+            dum.next = cur;
+            cur = temp;
+        }
+        return dum.next;
     }
 }
