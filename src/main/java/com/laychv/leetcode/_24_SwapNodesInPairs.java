@@ -33,6 +33,7 @@ public class _24_SwapNodesInPairs {
         System.out.println(listNodeToString(swapPairs(stringToListNode("[]"))));
         System.out.println(listNodeToString(swapPairs(stringToListNode("[1]"))));
         System.out.println(listNodeToString(swapPairs(stringToListNode("[1,2,3,4]"))));
+        System.out.println(listNodeToString(swapPairs2(stringToListNode("[1,2,3,4]"))));
     }
 
     /***递归***/
@@ -44,6 +45,52 @@ public class _24_SwapNodesInPairs {
         n2.next = n1;
         n1.next = swapPairs(n3);
         return n2;
+    }
+
+    // 虚拟头结点
+    public static ListNode swapPairs2(ListNode head) {
+        // 创建一个虚拟头结点
+        ListNode dum = new ListNode(-1);
+        // 将虚拟头结点指向原链表的头结点
+        dum.next = head;
+        // 创建prev指针，初始指向虚拟头结点，prev的作用：指向待交换一对节点的前一个节点
+        ListNode prev = dum;
+
+        // 第4行：开始循环，条件是存在两个连续的节点可以交换
+        // prev.next != null：确保第一个节点存在
+        // prev.next.next != null：确保第二个节点存在
+        while (prev.next != null && prev.next.next != null) {
+            // 记录要交换的两个节点
+            // first：要交换的第一个节点（即prev.next）
+            ListNode first = prev.next;
+            // second：要交换的第二个节点（即prev.next.next）
+            ListNode second = prev.next.next;
+
+            // 执行交换的第一步
+            // 将prev的next指向second（第二个节点）
+            // 作用：将前一节点直接连接到第二个节点，跳过第一个节点
+            prev.next = second;
+
+            // 执行交换的第二步
+            // 将first的next指向second的下一个节点
+            // 作用：保存第二个节点之后的链表部分
+            // 举例：交换前：first->second->third，交换后：first->third
+            first.next = second.next;
+
+            // 执行交换的第三步
+            // 将second的next指向first
+            // 作用：完成节点间的链接反转
+            // 举例：交换前：second->third，交换后：second->first->third
+            second.next = first;
+
+            // 更新prev指针
+            // 将prev移动到交换后的第二个节点（即原来的first节点）
+            // 原因：交换后，first变成了这一对的第二个节点
+            // 下一对节点的前驱节点应该是当前这对节点的第二个节点
+            prev = first;
+        }
+
+        return dum.next;
     }
 }
 
